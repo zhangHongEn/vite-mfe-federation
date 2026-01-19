@@ -12,8 +12,12 @@
     "file": "assets/index-CFOnY0CO.js",
     "name": "index"
   },
-  "_main--yJ5sKGw.js": {
-    "file": "assets/main--yJ5sKGw.js",
+  "_main-C6F1Vqs9.css": {
+    "file": "assets/main-C6F1Vqs9.css",
+    "src": "_main-C6F1Vqs9.css"
+  },
+  "_main-DufUQBHf.js": {
+    "file": "assets/main-DufUQBHf.js",
     "name": "main",
     "isDynamicEntry": true,
     "imports": [
@@ -28,10 +32,6 @@
       "assets/main-C6F1Vqs9.css"
     ]
   },
-  "_main-C6F1Vqs9.css": {
-    "file": "assets/main-C6F1Vqs9.css",
-    "src": "_main-C6F1Vqs9.css"
-  },
   "_preload-helper-zqhVMzB2.js": {
     "file": "assets/preload-helper-zqhVMzB2.js",
     "name": "preload-helper"
@@ -44,19 +44,19 @@
     ]
   },
   "index.html": {
-    "file": "assets/index-3dG3PBgA.js",
+    "file": "assets/index-DnoSuZ8j.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
     "imports": [
-      "_main--yJ5sKGw.js",
+      "_main-DufUQBHf.js",
       "_preload-helper-zqhVMzB2.js",
       "_index-CFOnY0CO.js",
       "_vite_mf_2_vue_mf_2_app__mf_v__runtimeInit__mf_v__-QwQDf2U3.js"
     ]
   },
   "node_modules/__mf__virtual/vite_mf_2_vue_mf_2_app__H_A_I__hostAutoInit__H_A_I__.js": {
-    "file": "assets/hostInit-CLAB1fSY.js",
+    "file": "assets/hostInit-DNQ4sufS.js",
     "name": "hostInit",
     "src": "node_modules/__mf__virtual/vite_mf_2_vue_mf_2_app__H_A_I__hostAutoInit__H_A_I__.js",
     "isEntry": true,
@@ -69,13 +69,13 @@
     ]
   },
   "src/views/AboutView.vue": {
-    "file": "assets/AboutView-CI6zVs8F.js",
+    "file": "assets/AboutView-4BXESFoL.js",
     "name": "AboutView",
     "src": "src/views/AboutView.vue",
     "isDynamicEntry": true,
     "imports": [
       "_index-CFOnY0CO.js",
-      "_main--yJ5sKGw.js",
+      "_main-DufUQBHf.js",
       "_preload-helper-zqhVMzB2.js",
       "_vite_mf_2_vue_mf_2_app__mf_v__runtimeInit__mf_v__-QwQDf2U3.js"
     ],
@@ -84,7 +84,7 @@
     ]
   },
   "virtual:mf-REMOTE_ENTRY_ID": {
-    "file": "assets/remoteEntry-ChTRbMCF.js",
+    "file": "assets/remoteEntry-DW_LLKXR.js",
     "name": "remoteEntry",
     "src": "virtual:mf-REMOTE_ENTRY_ID",
     "isEntry": true,
@@ -100,7 +100,7 @@
     ]
   },
   "virtual:mf-exposes": {
-    "file": "assets/virtualExposes-BsPp5qXy.js",
+    "file": "assets/virtualExposes-8LzZmql_.js",
     "name": "virtualExposes",
     "src": "virtual:mf-exposes",
     "isEntry": true,
@@ -108,7 +108,7 @@
       "_preload-helper-zqhVMzB2.js"
     ],
     "dynamicImports": [
-      "_main--yJ5sKGw.js"
+      "_main-DufUQBHf.js"
     ]
   }
 }

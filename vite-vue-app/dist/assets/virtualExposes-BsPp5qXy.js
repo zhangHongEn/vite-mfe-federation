@@ -1,2 +1,0 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/main--yJ5sKGw.js","assets/preload-helper-zqhVMzB2.js","assets/index-CFOnY0CO.js","assets/vite_mf_2_vue_mf_2_app__mf_v__runtimeInit__mf_v__-QwQDf2U3.js","assets/main-C6F1Vqs9.css"])))=>i.map(i=>d[i]);
-import{_ as r}from"./preload-helper-zqhVMzB2.js";const s={"./main":async()=>{const t=await r(()=>import("./main--yJ5sKGw.js").then(o=>o.m),__vite__mapDeps([0,1,2,3,4])),e={};return Object.assign(e,t),Object.defineProperty(e,"__esModule",{value:!0,enumerable:!1}),e}};export{s as default};

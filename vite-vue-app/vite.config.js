@@ -32,8 +32,6 @@ export default ({ command }) => defineConfig({
   },
   build: {
     target: 'esnext',
-    minify: false,
-    cssCodeSplit: false,
   },
   resolve: {
     alias: {

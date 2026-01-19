@@ -26,7 +26,7 @@ let container
 export async function mount(props) {
   container = document.createElement('div')
   container.classList.add(props.name)
-  document.getElementById("mfe-apps").appendChild(container)
+  document.body.appendChild(container)
   app = createApp(RouterView)
   app.use(router)
   app.mount(container)
@@ -38,3 +38,6 @@ export async function unmount() {
 }
 
 export async function bootstrap() {}
+mount({
+  name: "vite-vue-app",
+})

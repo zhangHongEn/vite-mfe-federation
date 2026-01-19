@@ -17,7 +17,7 @@ A lightweight micro-frontend solution built with mainstream 2026 technologies, d
 ### Features
 - High performance: manifest preloading and optimized ESM waterfall to speed up MF loading
 - Great DX: HMR, debugging, and module graph support
-- Robust sandbox isolation: prevents cross-app pollution (inspired by qiankun, battle-tested)
+- Robust sandbox isolation: prevents cross-app pollution (forks from qiankun, battle-tested)
 
 ### Comparison
 - Performance: Lighthouse score 100
@@ -68,7 +68,7 @@ A lightweight micro-frontend solution built with mainstream 2026 technologies, d
 ### 特性
 - 性能高：manifest 预加载、优化 ESM 加载瀑布，显著提升微前端加载速度
 - 开发体验强：支持 HMR、Debug、Module Graph 等能力
-- 完善的沙箱隔离：避免应用间相互污染（参考 qiankun，已在大量项目验证）
+- 完善的沙箱隔离：避免应用间相互污染（forks from qiankun，经过大量项目验证）
 
 ### 方案对比
 - 性能：Lighthouse 100 分

@@ -6,7 +6,7 @@ export default function Home() {
     <div style={{ padding: 20 }}>
       <h1>React Home</h1>
       <p>Welcome to the Home page of your React app.</p>
-      <Link to="/module-federation-spa-boilerplate/rspack_react_app/about">Go to About</Link>
+      <Link to="/vite-mfe-federation/rspack_react_app/about">Go to About</Link>
     </div>
   );
 }

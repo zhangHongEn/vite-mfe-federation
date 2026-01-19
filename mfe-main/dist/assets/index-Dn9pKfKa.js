@@ -6760,8 +6760,8 @@ const _sfc_main = /* @__PURE__ */ mfe_mf_2_main__loadShare__vue__loadShare__.def
                 mfe_mf_2_main__loadShare__vue__loadShare__.createVNode(_component_el_menu_item_group, null, {
                   default: mfe_mf_2_main__loadShare__vue__loadShare__.withCtx(() => [
                     mfe_mf_2_main__loadShare__vue__loadShare__.createVNode(_component_el_menu_item, {
-                      index: "/module-federation-spa-boilerplate/vite-vue-app/home/",
-                      onClick: _cache[0] || (_cache[0] = ($event) => mfe_mf_2_main__loadShare__vue__loadShare__.unref(tt$1)("/module-federation-spa-boilerplate/vite-vue-app/home/"))
+                      index: "/vite-mfe-federation/vite-vue-app/home/",
+                      onClick: _cache[0] || (_cache[0] = ($event) => mfe_mf_2_main__loadShare__vue__loadShare__.unref(tt$1)("/vite-mfe-federation/vite-vue-app/home/"))
                     }, {
                       default: mfe_mf_2_main__loadShare__vue__loadShare__.withCtx(() => _cache[5] || (_cache[5] = [
                         mfe_mf_2_main__loadShare__vue__loadShare__.createTextVNode("home")
@@ -6770,8 +6770,8 @@ const _sfc_main = /* @__PURE__ */ mfe_mf_2_main__loadShare__vue__loadShare__.def
                       __: [5]
                     }),
                     mfe_mf_2_main__loadShare__vue__loadShare__.createVNode(_component_el_menu_item, {
-                      index: "/module-federation-spa-boilerplate/vite-vue-app/about",
-                      onClick: _cache[1] || (_cache[1] = ($event) => mfe_mf_2_main__loadShare__vue__loadShare__.unref(tt$1)("/module-federation-spa-boilerplate/vite-vue-app/about"))
+                      index: "/vite-mfe-federation/vite-vue-app/about",
+                      onClick: _cache[1] || (_cache[1] = ($event) => mfe_mf_2_main__loadShare__vue__loadShare__.unref(tt$1)("/vite-mfe-federation/vite-vue-app/about"))
                     }, {
                       default: mfe_mf_2_main__loadShare__vue__loadShare__.withCtx(() => _cache[6] || (_cache[6] = [
                         mfe_mf_2_main__loadShare__vue__loadShare__.createTextVNode("about")
@@ -6793,8 +6793,8 @@ const _sfc_main = /* @__PURE__ */ mfe_mf_2_main__loadShare__vue__loadShare__.def
                 mfe_mf_2_main__loadShare__vue__loadShare__.createVNode(_component_el_menu_item_group, null, {
                   default: mfe_mf_2_main__loadShare__vue__loadShare__.withCtx(() => [
                     mfe_mf_2_main__loadShare__vue__loadShare__.createVNode(_component_el_menu_item, {
-                      index: "/module-federation-spa-boilerplate/rspack_react_app/home",
-                      onClick: _cache[2] || (_cache[2] = ($event) => mfe_mf_2_main__loadShare__vue__loadShare__.unref(tt$1)("/module-federation-spa-boilerplate/rspack_react_app/home"))
+                      index: "/vite-mfe-federation/rspack_react_app/home",
+                      onClick: _cache[2] || (_cache[2] = ($event) => mfe_mf_2_main__loadShare__vue__loadShare__.unref(tt$1)("/vite-mfe-federation/rspack_react_app/home"))
                     }, {
                       default: mfe_mf_2_main__loadShare__vue__loadShare__.withCtx(() => _cache[8] || (_cache[8] = [
                         mfe_mf_2_main__loadShare__vue__loadShare__.createTextVNode("home")
@@ -6803,8 +6803,8 @@ const _sfc_main = /* @__PURE__ */ mfe_mf_2_main__loadShare__vue__loadShare__.def
                       __: [8]
                     }),
                     mfe_mf_2_main__loadShare__vue__loadShare__.createVNode(_component_el_menu_item, {
-                      index: "/module-federation-spa-boilerplate/rspack_react_app/about",
-                      onClick: _cache[3] || (_cache[3] = ($event) => mfe_mf_2_main__loadShare__vue__loadShare__.unref(tt$1)("/module-federation-spa-boilerplate/rspack_react_app/about"))
+                      index: "/vite-mfe-federation/rspack_react_app/about",
+                      onClick: _cache[3] || (_cache[3] = ($event) => mfe_mf_2_main__loadShare__vue__loadShare__.unref(tt$1)("/vite-mfe-federation/rspack_react_app/about"))
                     }, {
                       default: mfe_mf_2_main__loadShare__vue__loadShare__.withCtx(() => _cache[9] || (_cache[9] = [
                         mfe_mf_2_main__loadShare__vue__loadShare__.createTextVNode("about")

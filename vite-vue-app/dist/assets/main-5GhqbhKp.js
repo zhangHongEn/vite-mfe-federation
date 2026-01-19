@@ -1894,7 +1894,7 @@ return (_ctx, _cache) => {
 
   return (vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.openBlock(), vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createElementBlock("div", _hoisted_1, [
     _cache[1] || (_cache[1] = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createElementVNode("a", {
-      href: "https://github.com/zhanghongen/module-federation-spa-boilerplate",
+      href: "https://github.com/zhanghongen/vite-mfe-federation",
       target: "_blank",
       "aria-label": "GitHub"
     }, [
@@ -1910,7 +1910,7 @@ return (_ctx, _cache) => {
     ], -1)),
     _cache[2] || (_cache[2] = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createElementVNode("h1", null, "Vue Home", -1)),
     _cache[3] || (_cache[3] = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createElementVNode("p", null, "This is the main landing page of your Vue 3 app.", -1)),
-    vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createVNode(_component_router_link, { to: "/module-federation-spa-boilerplate/vite-vue-app/about" }, {
+    vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createVNode(_component_router_link, { to: "/vite-mfe-federation/vite-vue-app/about" }, {
       default: vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.withCtx(() => _cache[0] || (_cache[0] = [
         vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createTextVNode("Go to About")
       ])),
@@ -1928,12 +1928,12 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: '/module-federation-spa-boilerplate/vite-vue-app/home',
+      path: '/vite-mfe-federation/vite-vue-app/home',
       name: 'home',
       component: HomeView,
     },
     {
-      path: '/module-federation-spa-boilerplate/vite-vue-app/about',
+      path: '/vite-mfe-federation/vite-vue-app/about',
       name: 'about',
       component: () => __vitePreload(() => import('./AboutView-2hfykDen.js'),true              ?__vite__mapDeps([0,1,2]):void 0),
     },

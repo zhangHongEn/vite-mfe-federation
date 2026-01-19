@@ -2,15 +2,15 @@
   "apps": [
     {
       "appCode": "vite-vue-app",
-      "routes": ["/module-federation-spa-boilerplate/vite-vue-app"],
+      "routes": ["/vite-mfe-federation/vite-vue-app"],
       "entry": "http://localhost:5001/mf-manifest.json",
-      "entry": "https://zhanghongen.github.io/module-federation-spa-boilerplate/vite-vue-app/dist/mf-manifest.json"
+      "entry": "https://zhanghongen.github.io/vite-mfe-federation/vite-vue-app/dist/mf-manifest.json"
     },
     {
       "appCode": "rspack_react_app",
-      "routes": ["/module-federation-spa-boilerplate/rspack_react_app"],
+      "routes": ["/vite-mfe-federation/rspack_react_app"],
       "entry": "http://localhost:5002/mf-manifest.json",
-      "entry": "https://zhanghongen.github.io/module-federation-spa-boilerplate/rspack-react-app/dist/mf-manifest.json"
+      "entry": "https://zhanghongen.github.io/vite-mfe-federation/rspack-react-app/dist/mf-manifest.json"
     }
   ]
 }

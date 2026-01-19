@@ -8,8 +8,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/module-federation-spa-boilerplate/rspack_react_app/home" element={<Home />} />
-        <Route path="/module-federation-spa-boilerplate/rspack_react_app/about" element={<About />} />
+        <Route path="/vite-mfe-federation/rspack_react_app/home" element={<Home />} />
+        <Route path="/vite-mfe-federation/rspack_react_app/about" element={<About />} />
       </Routes>
     </Router>
   );

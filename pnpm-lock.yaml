@@ -67,14 +67,14 @@ importers:
   vite-vue-app:
     dependencies:
       proxy-sandbox-browser:
-        specifier: 2.0.3-beta.20
-        version: 2.0.3-beta.20
+        specifier: 2.0.3
+        version: 2.0.3
       vite-plugin-sandbox:
-        specifier: 2.0.3-beta.20
-        version: 2.0.3-beta.20(rollup@4.43.0)
+        specifier: 2.0.3
+        version: 2.0.3(rollup@4.43.0)
       vite-plugin-sandbox-css:
-        specifier: 2.0.3-beta.20
-        version: 2.0.3-beta.20(rollup@4.43.0)
+        specifier: 2.0.3
+        version: 2.0.3(rollup@4.43.0)
       vue:
         specifier: ^3.5.13
         version: 3.5.16(typescript@5.8.3)
@@ -2004,8 +2004,8 @@ packages:
   proxy-from-env@1.1.0:
     resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
 
-  proxy-sandbox-browser@2.0.3-beta.20:
-    resolution: {integrity: sha512-CdpSONpPu+vrwdIT2khRooAOjHZ07d3tqqfCVvsohTxzsqvDopqeZhAMuaW1t15nVs9tL7+aQ4N474k20Iz9RQ==}
+  proxy-sandbox-browser@2.0.3:
+    resolution: {integrity: sha512-4YwpbwVdBC7XfuUIJK7s0vXrt5FL6vACUBhPxYWMGYdhq7/F0dVSet9VwDMnZ9zlA8QRRP1PPXUM02C50kEBbg==}
 
   quansync@0.2.10:
     resolution: {integrity: sha512-t41VRkMYbkHyCYmOvx/6URnN80H7k4X0lLdBMGsz+maAwrJQYB1djpV6vHrQIBE0WBSGqhtEHrK9U3DWWH8v7A==}
@@ -2339,11 +2339,11 @@ packages:
       '@nuxt/kit':
         optional: true
 
-  vite-plugin-sandbox-css@2.0.3-beta.20:
-    resolution: {integrity: sha512-K9jyHPpZrD9TCcKKJkbyhKwXvLhqvrl6U4th1+zrDgp+mP7JAw39hJaFlra9ET7Kinr3oSvsavP1EXSPdiaR3g==}
+  vite-plugin-sandbox-css@2.0.3:
+    resolution: {integrity: sha512-sQcIifab6I85elzlJ4wIMTbs9Auv3t7zwOM5SkkMYCNF3+j0rGQX0WfcU2F7zD2d5hKTMVJi72/g31Uh37JWHA==}
 
-  vite-plugin-sandbox@2.0.3-beta.20:
-    resolution: {integrity: sha512-yUYsKXwpCgv6wNwZ0PEHrOofb69X7mKFnRv8agpkYTCqclPAmwKmCY1qaCLGprKc0rzCDaPOZ3ABl1RSgpUKTg==}
+  vite-plugin-sandbox@2.0.3:
+    resolution: {integrity: sha512-vTK66gXNygsRdLcuT89vh4kmr6OZBIxc6u3dz8AbAF52mjUQepUbpF53xLMx0rnHEu8786OxCNNiDWwtq5N3nQ==}
 
   vite-plugin-vue-devtools@7.7.7:
     resolution: {integrity: sha512-d0fIh3wRcgSlr4Vz7bAk4va1MkdqhQgj9ANE/rBhsAjOnRfTLs2ocjFMvSUOsv6SRRXU9G+VM7yMgqDb6yI4iQ==}
@@ -4421,7 +4421,7 @@ snapshots:
 
   proxy-from-env@1.1.0: {}
 
-  proxy-sandbox-browser@2.0.3-beta.20:
+  proxy-sandbox-browser@2.0.3:
     dependencies:
       import-html-entry: 1.17.0
       lodash: 4.17.21
@@ -4756,22 +4756,22 @@ snapshots:
       - rollup
       - supports-color
 
-  vite-plugin-sandbox-css@2.0.3-beta.20(rollup@4.43.0):
+  vite-plugin-sandbox-css@2.0.3(rollup@4.43.0):
     dependencies:
       '@rollup/pluginutils': 5.2.0(rollup@4.43.0)
       postcss: 8.5.6
       postcss-prefix-selector: 2.1.1(postcss@8.5.6)
-      proxy-sandbox-browser: 2.0.3-beta.20
+      proxy-sandbox-browser: 2.0.3
     transitivePeerDependencies:
       - rollup
 
-  vite-plugin-sandbox@2.0.3-beta.20(rollup@4.43.0):
+  vite-plugin-sandbox@2.0.3(rollup@4.43.0):
     dependencies:
       '@babel/generator': 7.27.5
       '@babel/parser': 7.27.5
       '@babel/traverse': 7.27.4
       '@rollup/pluginutils': 5.2.0(rollup@4.43.0)
-      proxy-sandbox-browser: 2.0.3-beta.20
+      proxy-sandbox-browser: 2.0.3
     transitivePeerDependencies:
       - rollup
       - supports-color

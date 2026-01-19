@@ -1,0 +1,25 @@
+
+.vite-vue-app h1 {
+  font-size: 24px;
+}
+.vite-vue-app h1::after {
+  content: '(global style h1 for sandbox "vite-vue-app")';
+  font-size: 14px;
+  color: #999;
+}
+
+.vite-vue-app .home[data-v-4b4d6bb4] {
+  padding: 20px;
+}
+.vite-vue-app a[data-v-4b4d6bb4] {
+  color: #409eff;
+  text-decoration: underline;
+}
+
+.vite-vue-app .about[data-v-baeb9e4a] {
+  padding: 20px;
+}
+.vite-vue-app a[data-v-baeb9e4a] {
+  color: #409eff;
+  text-decoration: underline;
+}

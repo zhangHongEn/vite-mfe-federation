@@ -1,35 +1,39 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/AboutView-2hfykDen.js","assets/preload-helper-IPTOQvaJ.js","assets/vite_mf_2_vue_mf_2_app__mf_v__runtimeInit__mf_v__-DAs6oBq8.js"])))=>i.map(i=>d[i]);
-import { _ as __vitePreload } from './preload-helper-IPTOQvaJ.js';
-import { v as vite_mf_2_vue_mf_2_app__mf_v__runtimeInit__mf_v__, i as index_cjs } from './vite_mf_2_vue_mf_2_app__mf_v__runtimeInit__mf_v__-DAs6oBq8.js';
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/AboutView-B7SwoAmK.js","assets/index-CE2qAFNW.js","assets/preload-helper-ZHziiP-1.js","assets/vite_mf_2_vue_mf_2_app__mf_v__runtimeInit__mf_v__-DHK01JoI.js"])))=>i.map(i=>d[i]);
+import { _ as __vitePreload } from './preload-helper-ZHziiP-1.js';
+import { p as proxyWin } from './index-CE2qAFNW.js';
+import { v as vite_mf_2_vue_mf_2_app__mf_v__runtimeInit__mf_v__, i as index_cjs } from './vite_mf_2_vue_mf_2_app__mf_v__runtimeInit__mf_v__-DHK01JoI.js';
 
 // dev uses dynamic import to separate chunks
-    
-    const {loadShare} = index_cjs;
-    const {initPromise} = vite_mf_2_vue_mf_2_app__mf_v__runtimeInit__mf_v__;
-    const res = initPromise.then(_ => loadShare("vue", {
-    customShareInfo: {shareConfig:{
-      singleton: false,
-      strictVersion: undefined,
-      requiredVersion: "^3.5.16"
-    }}}));
-    const exportModule = await res.then(factory => factory());
-    var vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__ = exportModule;
 
-/*!
-  * vue-router v4.5.1
-  * (c) 2025 Eduardo San Martin Morote
-  * @license MIT
-  */
-const isBrowser = typeof document !== "undefined";
+const {
+  loadShare
+} = index_cjs;
+const {
+  initPromise
+} = vite_mf_2_vue_mf_2_app__mf_v__runtimeInit__mf_v__;
+const res = initPromise.then(_ => loadShare("vue", {
+  customShareInfo: {
+    shareConfig: {
+      singleton: false,
+      strictVersion: proxyWin.proxy.undefined,
+      requiredVersion: "^3.5.16"
+    }
+  }
+}));
+const exportModule = await res.then(factory => factory());
+var vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__ = exportModule;
+
+const isBrowser = typeof proxyWin.proxy.document !== "undefined";
 function isRouteComponent(component) {
   return typeof component === "object" || "displayName" in component || "props" in component || "__vccOpts" in component;
 }
 function isESModule(obj) {
-  return obj.__esModule || obj[Symbol.toStringTag] === "Module" || // support CF with dynamic imports that do not
+  return obj.__esModule || obj[proxyWin.proxy.Symbol.toStringTag] === "Module" ||
+  // support CF with dynamic imports that do not
   // add the Module string tag
   obj.default && isRouteComponent(obj.default);
 }
-const assign = Object.assign;
+const assign = proxyWin.proxy.Object.assign;
 function applyToParams(fn, params) {
   const newParams = {};
   for (const key in params) {
@@ -38,9 +42,8 @@ function applyToParams(fn, params) {
   }
   return newParams;
 }
-const noop = () => {
-};
-const isArray = Array.isArray;
+const noop = () => {};
+const isArray = proxyWin.proxy.Array.isArray;
 const HASH_RE = /#/g;
 const AMPERSAND_RE = /&/g;
 const SLASH_RE = /\//g;
@@ -56,7 +59,7 @@ const ENC_PIPE_RE = /%7C/g;
 const ENC_CURLY_CLOSE_RE = /%7D/g;
 const ENC_SPACE_RE = /%20/g;
 function commonEncode(text) {
-  return encodeURI("" + text).replace(ENC_PIPE_RE, "|").replace(ENC_BRACKET_OPEN_RE, "[").replace(ENC_BRACKET_CLOSE_RE, "]");
+  return proxyWin.proxy.encodeURI("" + text).replace(ENC_PIPE_RE, "|").replace(ENC_BRACKET_OPEN_RE, "[").replace(ENC_BRACKET_CLOSE_RE, "]");
 }
 function encodeHash(text) {
   return commonEncode(text).replace(ENC_CURLY_OPEN_RE, "{").replace(ENC_CURLY_CLOSE_RE, "}").replace(ENC_CARET_RE, "^");
@@ -75,15 +78,17 @@ function encodeParam(text) {
 }
 function decode(text) {
   try {
-    return decodeURIComponent("" + text);
-  } catch (err) {
-  }
+    return proxyWin.proxy.decodeURIComponent("" + text);
+  } catch (err) {}
   return "" + text;
 }
 const TRAILING_SLASH_RE = /\/$/;
-const removeTrailingSlash = (path) => path.replace(TRAILING_SLASH_RE, "");
+const removeTrailingSlash = path => path.replace(TRAILING_SLASH_RE, "");
 function parseURL(parseQuery2, location2, currentLocation = "/") {
-  let path, query = {}, searchString = "", hash = "";
+  let path,
+    query = {},
+    searchString = "",
+    hash = "";
   const hashPos = location2.indexOf("#");
   let searchPos = location2.indexOf("?");
   if (hashPos < searchPos && hashPos >= 0) {
@@ -111,8 +116,7 @@ function stringifyURL(stringifyQuery2, location2) {
   return location2.path + (query && "?") + query + (location2.hash || "");
 }
 function stripBase(pathname, base) {
-  if (!base || !pathname.toLowerCase().startsWith(base.toLowerCase()))
-    return pathname;
+  if (!base || !pathname.toLowerCase().startsWith(base.toLowerCase())) return pathname;
   return pathname.slice(base.length) || "/";
 }
 function isSameRouteLocation(stringifyQuery2, a, b) {
@@ -124,11 +128,9 @@ function isSameRouteRecord(a, b) {
   return (a.aliasOf || a) === (b.aliasOf || b);
 }
 function isSameRouteLocationParams(a, b) {
-  if (Object.keys(a).length !== Object.keys(b).length)
-    return false;
+  if (proxyWin.proxy.Object.keys(a).length !== proxyWin.proxy.Object.keys(b).length) return false;
   for (const key in a) {
-    if (!isSameRouteLocationParamsValue(a[key], b[key]))
-      return false;
+    if (!isSameRouteLocationParamsValue(a[key], b[key])) return false;
   }
   return true;
 }
@@ -139,10 +141,8 @@ function isEquivalentArray(a, b) {
   return isArray(b) ? a.length === b.length && a.every((value, i) => value === b[i]) : a.length === 1 && a[0] === b;
 }
 function resolveRelativePath(to, from) {
-  if (to.startsWith("/"))
-    return to;
-  if (!to)
-    return from;
+  if (to.startsWith("/")) return to;
+  if (!to) return from;
   const fromSegments = from.split("/");
   const toSegments = to.split("/");
   const lastToSegment = toSegments[toSegments.length - 1];
@@ -154,13 +154,10 @@ function resolveRelativePath(to, from) {
   let segment;
   for (toPosition = 0; toPosition < toSegments.length; toPosition++) {
     segment = toSegments[toPosition];
-    if (segment === ".")
-      continue;
+    if (segment === ".") continue;
     if (segment === "..") {
-      if (position > 1)
-        position--;
-    } else
-      break;
+      if (position > 1) position--;
+    } else break;
   }
   return fromSegments.slice(0, position).join("/") + "/" + toSegments.slice(toPosition).join("/");
 }
@@ -177,12 +174,12 @@ const START_LOCATION_NORMALIZED = {
   redirectedFrom: void 0
 };
 var NavigationType;
-(function(NavigationType2) {
+(function (NavigationType2) {
   NavigationType2["pop"] = "pop";
   NavigationType2["push"] = "push";
 })(NavigationType || (NavigationType = {}));
 var NavigationDirection;
-(function(NavigationDirection2) {
+(function (NavigationDirection2) {
   NavigationDirection2["back"] = "back";
   NavigationDirection2["forward"] = "forward";
   NavigationDirection2["unknown"] = "";
@@ -190,15 +187,14 @@ var NavigationDirection;
 function normalizeBase(base) {
   if (!base) {
     if (isBrowser) {
-      const baseEl = document.querySelector("base");
+      const baseEl = proxyWin.proxy.document.querySelector("base");
       base = baseEl && baseEl.getAttribute("href") || "/";
       base = base.replace(/^\w+:\/\/[^\/]+/, "");
     } else {
       base = "/";
     }
   }
-  if (base[0] !== "/" && base[0] !== "#")
-    base = "/" + base;
+  if (base[0] !== "/" && base[0] !== "#") base = "/" + base;
   return removeTrailingSlash(base);
 }
 const BEFORE_HASH_RE = /^[^#]+#/;
@@ -206,7 +202,7 @@ function createHref(base, location2) {
   return base.replace(BEFORE_HASH_RE, "#") + location2;
 }
 function getElementPosition(el, offset) {
-  const docRect = document.documentElement.getBoundingClientRect();
+  const docRect = proxyWin.proxy.document.documentElement.getBoundingClientRect();
   const elRect = el.getBoundingClientRect();
   return {
     behavior: offset.behavior,
@@ -215,15 +211,15 @@ function getElementPosition(el, offset) {
   };
 }
 const computeScrollPosition = () => ({
-  left: window.scrollX,
-  top: window.scrollY
+  left: proxyWin.proxy.scrollX,
+  top: proxyWin.proxy.scrollY
 });
 function scrollToPosition(position) {
   let scrollToOptions;
   if ("el" in position) {
     const positionEl = position.el;
     const isIdSelector = typeof positionEl === "string" && positionEl.startsWith("#");
-    const el = typeof positionEl === "string" ? isIdSelector ? document.getElementById(positionEl.slice(1)) : document.querySelector(positionEl) : positionEl;
+    const el = typeof positionEl === "string" ? isIdSelector ? proxyWin.proxy.document.getElementById(positionEl.slice(1)) : proxyWin.proxy.document.querySelector(positionEl) : positionEl;
     if (!el) {
       return;
     }
@@ -231,17 +227,15 @@ function scrollToPosition(position) {
   } else {
     scrollToOptions = position;
   }
-  if ("scrollBehavior" in document.documentElement.style)
-    window.scrollTo(scrollToOptions);
-  else {
-    window.scrollTo(scrollToOptions.left != null ? scrollToOptions.left : window.scrollX, scrollToOptions.top != null ? scrollToOptions.top : window.scrollY);
+  if ("scrollBehavior" in proxyWin.proxy.document.documentElement.style) proxyWin.proxy.scrollTo(scrollToOptions);else {
+    proxyWin.proxy.scrollTo(scrollToOptions.left != null ? scrollToOptions.left : proxyWin.proxy.scrollX, scrollToOptions.top != null ? scrollToOptions.top : proxyWin.proxy.scrollY);
   }
 }
 function getScrollKey(path, delta) {
-  const position = history.state ? history.state.position - delta : -1;
+  const position = proxyWin.proxy.history.state ? proxyWin.proxy.history.state.position - delta : -1;
   return position + path;
 }
-const scrollPositions = /* @__PURE__ */ new Map();
+const scrollPositions = /* @__PURE__ */new proxyWin.proxy.Map();
 function saveScrollPosition(key, scrollPosition) {
   scrollPositions.set(key, scrollPosition);
 }
@@ -250,15 +244,18 @@ function getSavedScrollPosition(key) {
   scrollPositions.delete(key);
   return scroll;
 }
-let createBaseLocation = () => location.protocol + "//" + location.host;
+let createBaseLocation = () => proxyWin.proxy.location.protocol + "//" + proxyWin.proxy.location.host;
 function createCurrentLocation(base, location2) {
-  const { pathname, search, hash } = location2;
+  const {
+    pathname,
+    search,
+    hash
+  } = location2;
   const hashPos = base.indexOf("#");
   if (hashPos > -1) {
     let slicePos = hash.includes(base.slice(hashPos)) ? base.slice(hashPos).length : 1;
     let pathFromHash = hash.slice(slicePos);
-    if (pathFromHash[0] !== "/")
-      pathFromHash = "/" + pathFromHash;
+    if (pathFromHash[0] !== "/") pathFromHash = "/" + pathFromHash;
     return stripBase(pathFromHash, "");
   }
   const path = stripBase(pathname, base);
@@ -268,8 +265,10 @@ function useHistoryListeners(base, historyState, currentLocation, replace) {
   let listeners = [];
   let teardowns = [];
   let pauseState = null;
-  const popStateHandler = ({ state }) => {
-    const to = createCurrentLocation(base, location);
+  const popStateHandler = ({
+    state
+  }) => {
+    const to = createCurrentLocation(base, proxyWin.proxy.location);
     const from = currentLocation.value;
     const fromState = historyState.value;
     let delta = 0;
@@ -284,7 +283,7 @@ function useHistoryListeners(base, historyState, currentLocation, replace) {
     } else {
       replace(to);
     }
-    listeners.forEach((listener) => {
+    listeners.forEach(listener => {
       listener(currentLocation.value, from, {
         delta,
         type: NavigationType.pop,
@@ -299,27 +298,28 @@ function useHistoryListeners(base, historyState, currentLocation, replace) {
     listeners.push(callback);
     const teardown = () => {
       const index = listeners.indexOf(callback);
-      if (index > -1)
-        listeners.splice(index, 1);
+      if (index > -1) listeners.splice(index, 1);
     };
     teardowns.push(teardown);
     return teardown;
   }
   function beforeUnloadListener() {
-    const { history: history2 } = window;
-    if (!history2.state)
-      return;
-    history2.replaceState(assign({}, history2.state, { scroll: computeScrollPosition() }), "");
+    const {
+      history: history2
+    } = proxyWin.proxy;
+    if (!history2.state) return;
+    history2.replaceState(assign({}, history2.state, {
+      scroll: computeScrollPosition()
+    }), "");
   }
   function destroy() {
-    for (const teardown of teardowns)
-      teardown();
+    for (const teardown of teardowns) teardown();
     teardowns = [];
-    window.removeEventListener("popstate", popStateHandler);
-    window.removeEventListener("beforeunload", beforeUnloadListener);
+    proxyWin.proxy.removeEventListener("popstate", popStateHandler);
+    proxyWin.proxy.removeEventListener("beforeunload", beforeUnloadListener);
   }
-  window.addEventListener("popstate", popStateHandler);
-  window.addEventListener("beforeunload", beforeUnloadListener, {
+  proxyWin.proxy.addEventListener("popstate", popStateHandler);
+  proxyWin.proxy.addEventListener("beforeunload", beforeUnloadListener, {
     passive: true
   });
   return {
@@ -334,16 +334,21 @@ function buildState(back, current, forward, replaced = false, computeScroll = fa
     current,
     forward,
     replaced,
-    position: window.history.length,
+    position: proxyWin.proxy.history.length,
     scroll: computeScroll ? computeScrollPosition() : null
   };
 }
 function useHistoryStateNavigation(base) {
-  const { history: history2, location: location2 } = window;
+  const {
+    history: history2,
+    location: location2
+  } = proxyWin.proxy;
   const currentLocation = {
     value: createCurrentLocation(base, location2)
   };
-  const historyState = { value: history2.state };
+  const historyState = {
+    value: history2.state
+  };
   if (!historyState.value) {
     changeLocation(currentLocation.value, {
       back: null,
@@ -359,43 +364,39 @@ function useHistoryStateNavigation(base) {
   }
   function changeLocation(to, state, replace2) {
     const hashIndex = base.indexOf("#");
-    const url = hashIndex > -1 ? (location2.host && document.querySelector("base") ? base : base.slice(hashIndex)) + to : createBaseLocation() + base + to;
+    const url = hashIndex > -1 ? (location2.host && proxyWin.proxy.document.querySelector("base") ? base : base.slice(hashIndex)) + to : createBaseLocation() + base + to;
     try {
       history2[replace2 ? "replaceState" : "pushState"](state, "", url);
       historyState.value = state;
     } catch (err) {
       {
-        console.error(err);
+        proxyWin.proxy.console.error(err);
       }
       location2[replace2 ? "replace" : "assign"](url);
     }
   }
   function replace(to, data) {
-    const state = assign({}, history2.state, buildState(
-      historyState.value.back,
-      // keep back and forward entries but override current position
-      to,
-      historyState.value.forward,
-      true
-    ), data, { position: historyState.value.position });
+    const state = assign({}, history2.state, buildState(historyState.value.back,
+    // keep back and forward entries but override current position
+    to, historyState.value.forward, true), data, {
+      position: historyState.value.position
+    });
     changeLocation(to, state, true);
     currentLocation.value = to;
   }
   function push(to, data) {
-    const currentState = assign(
-      {},
-      // use current history state to gracefully handle a wrong call to
-      // history.replaceState
-      // https://github.com/vuejs/router/issues/366
-      historyState.value,
-      history2.state,
-      {
-        forward: to,
-        scroll: computeScrollPosition()
-      }
-    );
+    const currentState = assign({},
+    // use current history state to gracefully handle a wrong call to
+    // history.replaceState
+    // https://github.com/vuejs/router/issues/366
+    historyState.value, history2.state, {
+      forward: to,
+      scroll: computeScrollPosition()
+    });
     changeLocation(currentState.current, currentState, true);
-    const state = assign({}, buildState(currentLocation.value, to, null), { position: currentState.position + 1 }, data);
+    const state = assign({}, buildState(currentLocation.value, to, null), {
+      position: currentState.position + 1
+    }, data);
     changeLocation(to, state, false);
     currentLocation.value = to;
   }
@@ -411,9 +412,8 @@ function createWebHistory(base) {
   const historyNavigation = useHistoryStateNavigation(base);
   const historyListeners = useHistoryListeners(base, historyNavigation.state, historyNavigation.location, historyNavigation.replace);
   function go(delta, triggerListeners = true) {
-    if (!triggerListeners)
-      historyListeners.pauseListeners();
-    history.go(delta);
+    if (!triggerListeners) historyListeners.pauseListeners();
+    proxyWin.proxy.history.go(delta);
   }
   const routerHistory = assign({
     // it's overridden right after
@@ -422,11 +422,11 @@ function createWebHistory(base) {
     go,
     createHref: createHref.bind(null, base)
   }, historyNavigation, historyListeners);
-  Object.defineProperty(routerHistory, "location", {
+  proxyWin.proxy.Object.defineProperty(routerHistory, "location", {
     enumerable: true,
     get: () => historyNavigation.location.value
   });
-  Object.defineProperty(routerHistory, "state", {
+  proxyWin.proxy.Object.defineProperty(routerHistory, "state", {
     enumerable: true,
     get: () => historyNavigation.state.value
   });
@@ -438,23 +438,23 @@ function isRouteLocation(route) {
 function isRouteName(name) {
   return typeof name === "string" || typeof name === "symbol";
 }
-const NavigationFailureSymbol = Symbol("");
+const NavigationFailureSymbol = proxyWin.proxy.Symbol("");
 var NavigationFailureType;
-(function(NavigationFailureType2) {
+(function (NavigationFailureType2) {
   NavigationFailureType2[NavigationFailureType2["aborted"] = 4] = "aborted";
   NavigationFailureType2[NavigationFailureType2["cancelled"] = 8] = "cancelled";
   NavigationFailureType2[NavigationFailureType2["duplicated"] = 16] = "duplicated";
 })(NavigationFailureType || (NavigationFailureType = {}));
 function createRouterError(type, params) {
   {
-    return assign(new Error(), {
+    return assign(new proxyWin.proxy.Error(), {
       type,
       [NavigationFailureSymbol]: true
     }, params);
   }
 }
 function isNavigationFailure(error, type) {
-  return error instanceof Error && NavigationFailureSymbol in error && (type == null || !!(error.type & type));
+  return error instanceof proxyWin.proxy.Error && NavigationFailureSymbol in error && (type == null || !!(error.type & type));
 }
 const BASE_PARAM_PATTERN = "[^/]+?";
 const BASE_PATH_PARSER_OPTIONS = {
@@ -470,22 +470,23 @@ function tokensToParser(segments, extraOptions) {
   let pattern = options.start ? "^" : "";
   const keys = [];
   for (const segment of segments) {
-    const segmentScores = segment.length ? [] : [
-      90
-      /* PathScore.Root */
-    ];
-    if (options.strict && !segment.length)
-      pattern += "/";
+    const segmentScores = segment.length ? [] : [90
+    /* PathScore.Root */];
+    if (options.strict && !segment.length) pattern += "/";
     for (let tokenIndex = 0; tokenIndex < segment.length; tokenIndex++) {
       const token = segment[tokenIndex];
       let subSegmentScore = 40 + (options.sensitive ? 0.25 : 0);
       if (token.type === 0) {
-        if (!tokenIndex)
-          pattern += "/";
+        if (!tokenIndex) pattern += "/";
         pattern += token.value.replace(REGEX_CHARS_RE, "\\$&");
         subSegmentScore += 40;
       } else if (token.type === 1) {
-        const { value, repeatable, optional, regexp } = token;
+        const {
+          value,
+          repeatable,
+          optional,
+          regexp
+        } = token;
         keys.push({
           name: value,
           repeatable,
@@ -495,26 +496,22 @@ function tokensToParser(segments, extraOptions) {
         if (re2 !== BASE_PARAM_PATTERN) {
           subSegmentScore += 10;
           try {
-            new RegExp(`(${re2})`);
+            new proxyWin.proxy.RegExp(`(${re2})`);
           } catch (err) {
-            throw new Error(`Invalid custom RegExp for param "${value}" (${re2}): ` + err.message);
+            throw new proxyWin.proxy.Error(`Invalid custom RegExp for param "${value}" (${re2}): ` + err.message);
           }
         }
         let subPattern = repeatable ? `((?:${re2})(?:/(?:${re2}))*)` : `(${re2})`;
-        if (!tokenIndex)
-          subPattern = // avoid an optional / if there are more segments e.g. /:p?-static
-          // or /:p?-:p2
-          optional && segment.length < 2 ? `(?:/${subPattern})` : "/" + subPattern;
-        if (optional)
-          subPattern += "?";
+        if (!tokenIndex) subPattern =
+        // avoid an optional / if there are more segments e.g. /:p?-static
+        // or /:p?-:p2
+        optional && segment.length < 2 ? `(?:/${subPattern})` : "/" + subPattern;
+        if (optional) subPattern += "?";
         pattern += subPattern;
         subSegmentScore += 20;
-        if (optional)
-          subSegmentScore += -8;
-        if (repeatable)
-          subSegmentScore += -20;
-        if (re2 === ".*")
-          subSegmentScore += -50;
+        if (optional) subSegmentScore += -8;
+        if (repeatable) subSegmentScore += -20;
+        if (re2 === ".*") subSegmentScore += -50;
       }
       segmentScores.push(subSegmentScore);
     }
@@ -524,18 +521,13 @@ function tokensToParser(segments, extraOptions) {
     const i = score.length - 1;
     score[i][score[i].length - 1] += 0.7000000000000001;
   }
-  if (!options.strict)
-    pattern += "/?";
-  if (options.end)
-    pattern += "$";
-  else if (options.strict && !pattern.endsWith("/"))
-    pattern += "(?:/|$)";
-  const re = new RegExp(pattern, options.sensitive ? "" : "i");
+  if (!options.strict) pattern += "/?";
+  if (options.end) pattern += "$";else if (options.strict && !pattern.endsWith("/")) pattern += "(?:/|$)";
+  const re = new proxyWin.proxy.RegExp(pattern, options.sensitive ? "" : "i");
   function parse(path) {
     const match = path.match(re);
     const params = {};
-    if (!match)
-      return null;
+    if (!match) return null;
     for (let i = 1; i < match.length; i++) {
       const value = match[i] || "";
       const key = keys[i - 1];
@@ -547,29 +539,28 @@ function tokensToParser(segments, extraOptions) {
     let path = "";
     let avoidDuplicatedSlash = false;
     for (const segment of segments) {
-      if (!avoidDuplicatedSlash || !path.endsWith("/"))
-        path += "/";
+      if (!avoidDuplicatedSlash || !path.endsWith("/")) path += "/";
       avoidDuplicatedSlash = false;
       for (const token of segment) {
         if (token.type === 0) {
           path += token.value;
         } else if (token.type === 1) {
-          const { value, repeatable, optional } = token;
+          const {
+            value,
+            repeatable,
+            optional
+          } = token;
           const param = value in params ? params[value] : "";
           if (isArray(param) && !repeatable) {
-            throw new Error(`Provided param "${value}" is an array but it is not repeatable (* or + modifiers)`);
+            throw new proxyWin.proxy.Error(`Provided param "${value}" is an array but it is not repeatable (* or + modifiers)`);
           }
           const text = isArray(param) ? param.join("/") : param;
           if (!text) {
             if (optional) {
               if (segment.length < 2) {
-                if (path.endsWith("/"))
-                  path = path.slice(0, -1);
-                else
-                  avoidDuplicatedSlash = true;
+                if (path.endsWith("/")) path = path.slice(0, -1);else avoidDuplicatedSlash = true;
               }
-            } else
-              throw new Error(`Missing required param "${value}"`);
+            } else throw new proxyWin.proxy.Error(`Missing required param "${value}"`);
           }
           path += text;
         }
@@ -589,8 +580,7 @@ function compareScoreArray(a, b) {
   let i = 0;
   while (i < a.length && i < b.length) {
     const diff = b[i] - a[i];
-    if (diff)
-      return diff;
+    if (diff) return diff;
     i++;
   }
   if (a.length < b.length) {
@@ -606,15 +596,12 @@ function comparePathParserScore(a, b) {
   const bScore = b.score;
   while (i < aScore.length && i < bScore.length) {
     const comp = compareScoreArray(aScore[i], bScore[i]);
-    if (comp)
-      return comp;
+    if (comp) return comp;
     i++;
   }
-  if (Math.abs(bScore.length - aScore.length) === 1) {
-    if (isLastScoreNegative(aScore))
-      return 1;
-    if (isLastScoreNegative(bScore))
-      return -1;
+  if (proxyWin.proxy.Math.abs(bScore.length - aScore.length) === 1) {
+    if (isLastScoreNegative(aScore)) return 1;
+    if (isLastScoreNegative(bScore)) return -1;
   }
   return bScore.length - aScore.length;
 }
@@ -628,23 +615,20 @@ const ROOT_TOKEN = {
 };
 const VALID_PARAM_RE = /[a-zA-Z0-9_]/;
 function tokenizePath(path) {
-  if (!path)
-    return [[]];
-  if (path === "/")
-    return [[ROOT_TOKEN]];
+  if (!path) return [[]];
+  if (path === "/") return [[ROOT_TOKEN]];
   if (!path.startsWith("/")) {
-    throw new Error(`Invalid path "${path}"`);
+    throw new proxyWin.proxy.Error(`Invalid path "${path}"`);
   }
   function crash(message) {
-    throw new Error(`ERR (${state})/"${buffer}": ${message}`);
+    throw new proxyWin.proxy.Error(`ERR (${state})/"${buffer}": ${message}`);
   }
   let state = 0;
   let previousState = state;
   const tokens = [];
   let segment;
   function finalizeSegment() {
-    if (segment)
-      tokens.push(segment);
+    if (segment) tokens.push(segment);
     segment = [];
   }
   let i = 0;
@@ -652,16 +636,14 @@ function tokenizePath(path) {
   let buffer = "";
   let customRe = "";
   function consumeBuffer() {
-    if (!buffer)
-      return;
+    if (!buffer) return;
     if (state === 0) {
       segment.push({
         type: 0,
         value: buffer
       });
     } else if (state === 1 || state === 2 || state === 3) {
-      if (segment.length > 1 && (char === "*" || char === "+"))
-        crash(`A repeatable param (${buffer}) must be alone in its segment. eg: '/:ids+.`);
+      if (segment.length > 1 && (char === "*" || char === "+")) crash(`A repeatable param (${buffer}) must be alone in its segment. eg: '/:ids+.`);
       segment.push({
         type: 1,
         value: buffer,
@@ -710,16 +692,12 @@ function tokenizePath(path) {
         } else {
           consumeBuffer();
           state = 0;
-          if (char !== "*" && char !== "?" && char !== "+")
-            i--;
+          if (char !== "*" && char !== "?" && char !== "+") i--;
         }
         break;
       case 2:
         if (char === ")") {
-          if (customRe[customRe.length - 1] == "\\")
-            customRe = customRe.slice(0, -1) + char;
-          else
-            state = 3;
+          if (customRe[customRe.length - 1] == "\\") customRe = customRe.slice(0, -1) + char;else state = 3;
         } else {
           customRe += char;
         }
@@ -727,8 +705,7 @@ function tokenizePath(path) {
       case 3:
         consumeBuffer();
         state = 0;
-        if (char !== "*" && char !== "?" && char !== "+")
-          i--;
+        if (char !== "*" && char !== "?" && char !== "+") i--;
         customRe = "";
         break;
       default:
@@ -736,8 +713,7 @@ function tokenizePath(path) {
         break;
     }
   }
-  if (state === 2)
-    crash(`Unfinished custom RegExp for param "${buffer}"`);
+  if (state === 2) crash(`Unfinished custom RegExp for param "${buffer}"`);
   consumeBuffer();
   finalizeSegment();
   return tokens;
@@ -752,15 +728,18 @@ function createRouteRecordMatcher(record, parent, options) {
     alias: []
   });
   if (parent) {
-    if (!matcher.record.aliasOf === !parent.record.aliasOf)
-      parent.children.push(matcher);
+    if (!matcher.record.aliasOf === !parent.record.aliasOf) parent.children.push(matcher);
   }
   return matcher;
 }
 function createRouterMatcher(routes, globalOptions) {
   const matchers = [];
-  const matcherMap = /* @__PURE__ */ new Map();
-  globalOptions = mergeOptions({ strict: false, end: true, sensitive: false }, globalOptions);
+  const matcherMap = /* @__PURE__ */new proxyWin.proxy.Map();
+  globalOptions = mergeOptions({
+    strict: false,
+    end: true,
+    sensitive: false
+  }, globalOptions);
   function getRecordMatcher(name) {
     return matcherMap.get(name);
   }
@@ -774,25 +753,26 @@ function createRouterMatcher(routes, globalOptions) {
       const aliases = typeof record.alias === "string" ? [record.alias] : record.alias;
       for (const alias of aliases) {
         normalizedRecords.push(
-          // we need to normalize again to ensure the `mods` property
-          // being non enumerable
-          normalizeRouteRecord(assign({}, mainNormalizedRecord, {
-            // this allows us to hold a copy of the `components` option
-            // so that async components cache is hold on the original record
-            components: originalRecord ? originalRecord.record.components : mainNormalizedRecord.components,
-            path: alias,
-            // we might be the child of an alias
-            aliasOf: originalRecord ? originalRecord.record : mainNormalizedRecord
-            // the aliases are always of the same kind as the original since they
-            // are defined on the same record
-          }))
-        );
+        // we need to normalize again to ensure the `mods` property
+        // being non enumerable
+        normalizeRouteRecord(assign({}, mainNormalizedRecord, {
+          // this allows us to hold a copy of the `components` option
+          // so that async components cache is hold on the original record
+          components: originalRecord ? originalRecord.record.components : mainNormalizedRecord.components,
+          path: alias,
+          // we might be the child of an alias
+          aliasOf: originalRecord ? originalRecord.record : mainNormalizedRecord
+          // the aliases are always of the same kind as the original since they
+          // are defined on the same record
+        })));
       }
     }
     let matcher;
     let originalMatcher;
     for (const normalizedRecord of normalizedRecords) {
-      const { path } = normalizedRecord;
+      const {
+        path
+      } = normalizedRecord;
       if (parent && path[0] !== "/") {
         const parentPath = parent.record.path;
         const connectingSlash = parentPath[parentPath.length - 1] === "/" ? "" : "/";
@@ -803,8 +783,7 @@ function createRouterMatcher(routes, globalOptions) {
         originalRecord.alias.push(matcher);
       } else {
         originalMatcher = originalMatcher || matcher;
-        if (originalMatcher !== matcher)
-          originalMatcher.alias.push(matcher);
+        if (originalMatcher !== matcher) originalMatcher.alias.push(matcher);
         if (isRootAdd && record.name && !isAliasRecord(matcher)) {
           removeRoute(record.name);
         }
@@ -837,8 +816,7 @@ function createRouterMatcher(routes, globalOptions) {
       const index = matchers.indexOf(matcherRef);
       if (index > -1) {
         matchers.splice(index, 1);
-        if (matcherRef.record.name)
-          matcherMap.delete(matcherRef.record.name);
+        if (matcherRef.record.name) matcherMap.delete(matcherRef.record.name);
         matcherRef.children.forEach(removeRoute);
         matcherRef.alias.forEach(removeRoute);
       }
@@ -850,8 +828,7 @@ function createRouterMatcher(routes, globalOptions) {
   function insertMatcher(matcher) {
     const index = findInsertionIndex(matcher, matchers);
     matchers.splice(index, 0, matcher);
-    if (matcher.record.name && !isAliasRecord(matcher))
-      matcherMap.set(matcher.record.name, matcher);
+    if (matcher.record.name && !isAliasRecord(matcher)) matcherMap.set(matcher.record.name, matcher);
   }
   function resolve(location2, currentLocation) {
     let matcher;
@@ -860,38 +837,33 @@ function createRouterMatcher(routes, globalOptions) {
     let name;
     if ("name" in location2 && location2.name) {
       matcher = matcherMap.get(location2.name);
-      if (!matcher)
-        throw createRouterError(1, {
-          location: location2
-        });
+      if (!matcher) throw createRouterError(1, {
+        location: location2
+      });
       name = matcher.record.name;
       params = assign(
-        // paramsFromLocation is a new object
-        paramsFromLocation(
-          currentLocation.params,
-          // only keep params that exist in the resolved location
-          // only keep optional params coming from a parent record
-          matcher.keys.filter((k) => !k.optional).concat(matcher.parent ? matcher.parent.keys.filter((k) => k.optional) : []).map((k) => k.name)
-        ),
-        // discard any existing params in the current location that do not exist here
-        // #1497 this ensures better active/exact matching
-        location2.params && paramsFromLocation(location2.params, matcher.keys.map((k) => k.name))
-      );
+      // paramsFromLocation is a new object
+      paramsFromLocation(currentLocation.params,
+      // only keep params that exist in the resolved location
+      // only keep optional params coming from a parent record
+      matcher.keys.filter(k => !k.optional).concat(matcher.parent ? matcher.parent.keys.filter(k => k.optional) : []).map(k => k.name)),
+      // discard any existing params in the current location that do not exist here
+      // #1497 this ensures better active/exact matching
+      location2.params && paramsFromLocation(location2.params, matcher.keys.map(k => k.name)));
       path = matcher.stringify(params);
     } else if (location2.path != null) {
       path = location2.path;
-      matcher = matchers.find((m) => m.re.test(path));
+      matcher = matchers.find(m => m.re.test(path));
       if (matcher) {
         params = matcher.parse(path);
         name = matcher.record.name;
       }
     } else {
-      matcher = currentLocation.name ? matcherMap.get(currentLocation.name) : matchers.find((m) => m.re.test(currentLocation.path));
-      if (!matcher)
-        throw createRouterError(1, {
-          location: location2,
-          currentLocation
-        });
+      matcher = currentLocation.name ? matcherMap.get(currentLocation.name) : matchers.find(m => m.re.test(currentLocation.path));
+      if (!matcher) throw createRouterError(1, {
+        location: location2,
+        currentLocation
+      });
       name = matcher.record.name;
       params = assign({}, currentLocation.params, location2.params);
       path = matcher.stringify(params);
@@ -910,7 +882,7 @@ function createRouterMatcher(routes, globalOptions) {
       meta: mergeMetaFields(matched)
     };
   }
-  routes.forEach((route) => addRoute(route));
+  routes.forEach(route => addRoute(route));
   function clearRoutes() {
     matchers.length = 0;
     matcherMap.clear();
@@ -927,8 +899,7 @@ function createRouterMatcher(routes, globalOptions) {
 function paramsFromLocation(params, keys) {
   const newParams = {};
   for (const key of keys) {
-    if (key in params)
-      newParams[key] = params[key];
+    if (key in params) newParams[key] = params[key];
   }
   return newParams;
 }
@@ -943,14 +914,16 @@ function normalizeRouteRecord(record) {
     props: normalizeRecordProps(record),
     children: record.children || [],
     instances: {},
-    leaveGuards: /* @__PURE__ */ new Set(),
-    updateGuards: /* @__PURE__ */ new Set(),
+    leaveGuards: /* @__PURE__ */new proxyWin.proxy.Set(),
+    updateGuards: /* @__PURE__ */new proxyWin.proxy.Set(),
     enterCallbacks: {},
     // must be declared afterwards
     // mods: {},
-    components: "components" in record ? record.components || null : record.component && { default: record.component }
+    components: "components" in record ? record.components || null : record.component && {
+      default: record.component
+    }
   };
-  Object.defineProperty(normalized, "mods", {
+  proxyWin.proxy.Object.defineProperty(normalized, "mods", {
     value: {}
   });
   return normalized;
@@ -961,15 +934,13 @@ function normalizeRecordProps(record) {
   if ("component" in record) {
     propsObject.default = props;
   } else {
-    for (const name in record.components)
-      propsObject[name] = typeof props === "object" ? props[name] : props;
+    for (const name in record.components) propsObject[name] = typeof props === "object" ? props[name] : props;
   }
   return propsObject;
 }
 function isAliasRecord(record) {
   while (record) {
-    if (record.record.aliasOf)
-      return true;
+    if (record.record.aliasOf) return true;
     record = record.parent;
   }
   return false;
@@ -1011,13 +982,14 @@ function getInsertionAncestor(matcher) {
   }
   return;
 }
-function isMatchable({ record }) {
-  return !!(record.name || record.components && Object.keys(record.components).length || record.redirect);
+function isMatchable({
+  record
+}) {
+  return !!(record.name || record.components && proxyWin.proxy.Object.keys(record.components).length || record.redirect);
 }
 function parseQuery(search) {
   const query = {};
-  if (search === "" || search === "?")
-    return query;
+  if (search === "" || search === "?") return query;
   const hasLeadingIM = search[0] === "?";
   const searchParams = (hasLeadingIM ? search.slice(1) : search).split("&");
   for (let i = 0; i < searchParams.length; ++i) {
@@ -1048,12 +1020,11 @@ function stringifyQuery(query) {
       }
       continue;
     }
-    const values = isArray(value) ? value.map((v) => v && encodeQueryValue(v)) : [value && encodeQueryValue(value)];
-    values.forEach((value2) => {
+    const values = isArray(value) ? value.map(v => v && encodeQueryValue(v)) : [value && encodeQueryValue(value)];
+    values.forEach(value2 => {
       if (value2 !== void 0) {
         search += (search.length ? "&" : "") + key;
-        if (value2 != null)
-          search += "=" + value2;
+        if (value2 != null) search += "=" + value2;
       }
     });
   }
@@ -1064,24 +1035,23 @@ function normalizeQuery(query) {
   for (const key in query) {
     const value = query[key];
     if (value !== void 0) {
-      normalizedQuery[key] = isArray(value) ? value.map((v) => v == null ? null : "" + v) : value == null ? value : "" + value;
+      normalizedQuery[key] = isArray(value) ? value.map(v => v == null ? null : "" + v) : value == null ? value : "" + value;
     }
   }
   return normalizedQuery;
 }
-const matchedRouteKey = Symbol("");
-const viewDepthKey = Symbol("");
-const routerKey = Symbol("");
-const routeLocationKey = Symbol("");
-const routerViewLocationKey = Symbol("");
+const matchedRouteKey = proxyWin.proxy.Symbol("");
+const viewDepthKey = proxyWin.proxy.Symbol("");
+const routerKey = proxyWin.proxy.Symbol("");
+const routeLocationKey = proxyWin.proxy.Symbol("");
+const routerViewLocationKey = proxyWin.proxy.Symbol("");
 function useCallbacks() {
   let handlers = [];
   function add(handler) {
     handlers.push(handler);
     return () => {
       const i = handlers.indexOf(handler);
-      if (i > -1)
-        handlers.splice(i, 1);
+      if (i > -1) handlers.splice(i, 1);
     };
   }
   function reset() {
@@ -1093,17 +1063,18 @@ function useCallbacks() {
     reset
   };
 }
-function guardToPromiseFn(guard, to, from, record, name, runWithContext = (fn) => fn()) {
-  const enterCallbackArray = record && // name is defined if record is because of the function overload
-  (record.enterCallbacks[name] = record.enterCallbacks[name] || []);
-  return () => new Promise((resolve, reject) => {
-    const next = (valid) => {
+function guardToPromiseFn(guard, to, from, record, name, runWithContext = fn => fn()) {
+  const enterCallbackArray = record && (
+  // name is defined if record is because of the function overload
+  record.enterCallbacks[name] = record.enterCallbacks[name] || []);
+  return () => new proxyWin.proxy.Promise((resolve, reject) => {
+    const next = valid => {
       if (valid === false) {
         reject(createRouterError(4, {
           from,
           to
         }));
-      } else if (valid instanceof Error) {
+      } else if (valid instanceof proxyWin.proxy.Error) {
         reject(valid);
       } else if (isRouteLocation(valid)) {
         reject(createRouterError(2, {
@@ -1111,7 +1082,8 @@ function guardToPromiseFn(guard, to, from, record, name, runWithContext = (fn) =
           to: valid
         }));
       } else {
-        if (enterCallbackArray && // since enterCallbackArray is truthy, both record and name also are
+        if (enterCallbackArray &&
+        // since enterCallbackArray is truthy, both record and name also are
         record.enterCallbacks[name] === enterCallbackArray && typeof valid === "function") {
           enterCallbackArray.push(valid);
         }
@@ -1119,28 +1091,25 @@ function guardToPromiseFn(guard, to, from, record, name, runWithContext = (fn) =
       }
     };
     const guardReturn = runWithContext(() => guard.call(record && record.instances[name], to, from, next));
-    let guardCall = Promise.resolve(guardReturn);
-    if (guard.length < 3)
-      guardCall = guardCall.then(next);
-    guardCall.catch((err) => reject(err));
+    let guardCall = proxyWin.proxy.Promise.resolve(guardReturn);
+    if (guard.length < 3) guardCall = guardCall.then(next);
+    guardCall.catch(err => reject(err));
   });
 }
-function extractComponentsGuards(matched, guardType, to, from, runWithContext = (fn) => fn()) {
+function extractComponentsGuards(matched, guardType, to, from, runWithContext = fn => fn()) {
   const guards = [];
   for (const record of matched) {
     for (const name in record.components) {
       let rawComponent = record.components[name];
-      if (guardType !== "beforeRouteEnter" && !record.instances[name])
-        continue;
+      if (guardType !== "beforeRouteEnter" && !record.instances[name]) continue;
       if (isRouteComponent(rawComponent)) {
         const options = rawComponent.__vccOpts || rawComponent;
         const guard = options[guardType];
         guard && guards.push(guardToPromiseFn(guard, to, from, record, name, runWithContext));
       } else {
         let componentPromise = rawComponent();
-        guards.push(() => componentPromise.then((resolved) => {
-          if (!resolved)
-            throw new Error(`Couldn't resolve component "${name}" at "${record.path}"`);
+        guards.push(() => componentPromise.then(resolved => {
+          if (!resolved) throw new proxyWin.proxy.Error(`Couldn't resolve component "${name}" at "${record.path}"`);
           const resolvedComponent = isESModule(resolved) ? resolved.default : resolved;
           record.mods[name] = resolved;
           record.components[name] = resolvedComponent;
@@ -1161,22 +1130,26 @@ function useLink(props) {
     return router.resolve(to);
   });
   const activeRecordIndex = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.computed(() => {
-    const { matched } = route.value;
-    const { length } = matched;
+    const {
+      matched
+    } = route.value;
+    const {
+      length
+    } = matched;
     const routeMatched = matched[length - 1];
     const currentMatched = currentRoute.matched;
-    if (!routeMatched || !currentMatched.length)
-      return -1;
+    if (!routeMatched || !currentMatched.length) return -1;
     const index = currentMatched.findIndex(isSameRouteRecord.bind(null, routeMatched));
-    if (index > -1)
-      return index;
+    if (index > -1) return index;
     const parentRecordPath = getOriginalPath(matched[length - 2]);
     return (
       // we are dealing with nested routes
-      length > 1 && // if the parent and matched route have the same path, this link is
+      length > 1 &&
+      // if the parent and matched route have the same path, this link is
       // referring to the empty child. Or we currently are on a different
       // child of the same parent
-      getOriginalPath(routeMatched) === parentRecordPath && // avoid comparing the child with its parent
+      getOriginalPath(routeMatched) === parentRecordPath &&
+      // avoid comparing the child with its parent
       currentMatched[currentMatched.length - 1].path !== parentRecordPath ? currentMatched.findIndex(isSameRouteRecord.bind(null, matched[length - 2])) : index
     );
   });
@@ -1184,16 +1157,15 @@ function useLink(props) {
   const isExactActive = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.computed(() => activeRecordIndex.value > -1 && activeRecordIndex.value === currentRoute.matched.length - 1 && isSameRouteLocationParams(currentRoute.params, route.value.params));
   function navigate(e = {}) {
     if (guardEvent(e)) {
-      const p = router[vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.unref(props.replace) ? "replace" : "push"](
-        vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.unref(props.to)
-        // avoid uncaught errors are they are logged anyway
+      const p = router[vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.unref(props.replace) ? "replace" : "push"](vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.unref(props.to)
+      // avoid uncaught errors are they are logged anyway
       ).catch(noop);
-      if (props.viewTransition && typeof document !== "undefined" && "startViewTransition" in document) {
-        document.startViewTransition(() => p);
+      if (props.viewTransition && typeof proxyWin.proxy.document !== "undefined" && "startViewTransition" in proxyWin.proxy.document) {
+        proxyWin.proxy.document.startViewTransition(() => p);
       }
       return p;
     }
-    return Promise.resolve();
+    return proxyWin.proxy.Promise.resolve();
   }
   return {
     route,
@@ -1206,29 +1178,35 @@ function useLink(props) {
 function preferSingleVNode(vnodes) {
   return vnodes.length === 1 ? vnodes[0] : vnodes;
 }
-const RouterLinkImpl = /* @__PURE__ */ vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.defineComponent({
+const RouterLinkImpl = /* @__PURE__ */vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.defineComponent({
   name: "RouterLink",
-  compatConfig: { MODE: 3 },
+  compatConfig: {
+    MODE: 3
+  },
   props: {
     to: {
-      type: [String, Object],
+      type: [proxyWin.proxy.String, proxyWin.proxy.Object],
       required: true
     },
-    replace: Boolean,
-    activeClass: String,
+    replace: proxyWin.proxy.Boolean,
+    activeClass: proxyWin.proxy.String,
     // inactiveClass: String,
-    exactActiveClass: String,
-    custom: Boolean,
+    exactActiveClass: proxyWin.proxy.String,
+    custom: proxyWin.proxy.Boolean,
     ariaCurrentValue: {
-      type: String,
+      type: proxyWin.proxy.String,
       default: "page"
     },
-    viewTransition: Boolean
+    viewTransition: proxyWin.proxy.Boolean
   },
   useLink,
-  setup(props, { slots }) {
+  setup(props, {
+    slots
+  }) {
     const link = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.reactive(useLink(props));
-    const { options } = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.inject(routerKey);
+    const {
+      options
+    } = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.inject(routerKey);
     const elClass = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.computed(() => ({
       [getLinkClass(props.activeClass, options.linkActiveClass, "router-link-active")]: link.isActive,
       // [getLinkClass(
@@ -1253,19 +1231,14 @@ const RouterLinkImpl = /* @__PURE__ */ vite_mf_2_vue_mf_2_app__loadShare__vue__l
 });
 const RouterLink = RouterLinkImpl;
 function guardEvent(e) {
-  if (e.metaKey || e.altKey || e.ctrlKey || e.shiftKey)
-    return;
-  if (e.defaultPrevented)
-    return;
-  if (e.button !== void 0 && e.button !== 0)
-    return;
+  if (e.metaKey || e.altKey || e.ctrlKey || e.shiftKey) return;
+  if (e.defaultPrevented) return;
+  if (e.button !== void 0 && e.button !== 0) return;
   if (e.currentTarget && e.currentTarget.getAttribute) {
     const target = e.currentTarget.getAttribute("target");
-    if (/\b_blank\b/i.test(target))
-      return;
+    if (/\b_blank\b/i.test(target)) return;
   }
-  if (e.preventDefault)
-    e.preventDefault();
+  if (e.preventDefault) e.preventDefault();
   return true;
 }
 function includesParams(outer, inner) {
@@ -1273,11 +1246,9 @@ function includesParams(outer, inner) {
     const innerValue = inner[key];
     const outerValue = outer[key];
     if (typeof innerValue === "string") {
-      if (innerValue !== outerValue)
-        return false;
+      if (innerValue !== outerValue) return false;
     } else {
-      if (!isArray(outerValue) || outerValue.length !== innerValue.length || innerValue.some((value, i) => value !== outerValue[i]))
-        return false;
+      if (!isArray(outerValue) || outerValue.length !== innerValue.length || innerValue.some((value, i) => value !== outerValue[i])) return false;
     }
   }
   return true;
@@ -1286,27 +1257,34 @@ function getOriginalPath(record) {
   return record ? record.aliasOf ? record.aliasOf.path : record.path : "";
 }
 const getLinkClass = (propClass, globalClass, defaultClass) => propClass != null ? propClass : globalClass != null ? globalClass : defaultClass;
-const RouterViewImpl = /* @__PURE__ */ vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.defineComponent({
+const RouterViewImpl = /* @__PURE__ */vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.defineComponent({
   name: "RouterView",
   // #674 we manually inherit them
   inheritAttrs: false,
   props: {
     name: {
-      type: String,
+      type: proxyWin.proxy.String,
       default: "default"
     },
-    route: Object
+    route: proxyWin.proxy.Object
   },
   // Better compat for @vue/compat users
   // https://github.com/vuejs/router/issues/1315
-  compatConfig: { MODE: 3 },
-  setup(props, { attrs, slots }) {
+  compatConfig: {
+    MODE: 3
+  },
+  setup(props, {
+    attrs,
+    slots
+  }) {
     const injectedRoute = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.inject(routerViewLocationKey);
     const routeToDisplay = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.computed(() => props.route || injectedRoute.value);
     const injectedDepth = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.inject(viewDepthKey, 0);
     const depth = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.computed(() => {
       let initialDepth = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.unref(injectedDepth);
-      const { matched } = routeToDisplay.value;
+      const {
+        matched
+      } = routeToDisplay.value;
       let matchedRoute;
       while ((matchedRoute = matched[initialDepth]) && !matchedRoute.components) {
         initialDepth++;
@@ -1330,23 +1308,29 @@ const RouterViewImpl = /* @__PURE__ */ vite_mf_2_vue_mf_2_app__loadShare__vue__l
           }
         }
       }
-      if (instance && to && // if there is no instance but to and from are the same this might be
+      if (instance && to && (
+      // if there is no instance but to and from are the same this might be
       // the first visit
-      (!from || !isSameRouteRecord(to, from) || !oldInstance)) {
-        (to.enterCallbacks[name] || []).forEach((callback) => callback(instance));
+      !from || !isSameRouteRecord(to, from) || !oldInstance)) {
+        (to.enterCallbacks[name] || []).forEach(callback => callback(instance));
       }
-    }, { flush: "post" });
+    }, {
+      flush: "post"
+    });
     return () => {
       const route = routeToDisplay.value;
       const currentName = props.name;
       const matchedRoute = matchedRouteRef.value;
       const ViewComponent = matchedRoute && matchedRoute.components[currentName];
       if (!ViewComponent) {
-        return normalizeSlot(slots.default, { Component: ViewComponent, route });
+        return normalizeSlot(slots.default, {
+          Component: ViewComponent,
+          route
+        });
       }
       const routePropsOption = matchedRoute.props[currentName];
       const routeProps = routePropsOption ? routePropsOption === true ? route.params : typeof routePropsOption === "function" ? routePropsOption(route) : routePropsOption : null;
-      const onVnodeUnmounted = (vnode) => {
+      const onVnodeUnmounted = vnode => {
         if (vnode.component.isUnmounted) {
           matchedRoute.instances[currentName] = null;
         }
@@ -1358,14 +1342,16 @@ const RouterViewImpl = /* @__PURE__ */ vite_mf_2_vue_mf_2_app__loadShare__vue__l
       return (
         // pass the vnode to the slot as a prop.
         // h and <component :is="..."> both accept vnodes
-        normalizeSlot(slots.default, { Component: component, route }) || component
+        normalizeSlot(slots.default, {
+          Component: component,
+          route
+        }) || component
       );
     };
   }
 });
 function normalizeSlot(slot, data) {
-  if (!slot)
-    return null;
+  if (!slot) return null;
   const slotContent = slot(data);
   return slotContent.length === 1 ? slotContent[0] : slotContent;
 }
@@ -1380,15 +1366,14 @@ function createRouter(options) {
   const afterGuards = useCallbacks();
   const currentRoute = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.shallowRef(START_LOCATION_NORMALIZED);
   let pendingLocation = START_LOCATION_NORMALIZED;
-  if (isBrowser && options.scrollBehavior && "scrollRestoration" in history) {
-    history.scrollRestoration = "manual";
+  if (isBrowser && options.scrollBehavior && "scrollRestoration" in proxyWin.proxy.history) {
+    proxyWin.proxy.history.scrollRestoration = "manual";
   }
-  const normalizeParams = applyToParams.bind(null, (paramValue) => "" + paramValue);
+  const normalizeParams = applyToParams.bind(null, paramValue => "" + paramValue);
   const encodeParams = applyToParams.bind(null, encodeParam);
-  const decodeParams = (
-    // @ts-expect-error: intentionally avoid the type check
-    applyToParams.bind(null, decode)
-  );
+  const decodeParams =
+  // @ts-expect-error: intentionally avoid the type check
+  applyToParams.bind(null, decode);
   function addRoute(parentOrRoute, route) {
     let parent;
     let record;
@@ -1407,7 +1392,7 @@ function createRouter(options) {
     }
   }
   function getRoutes() {
-    return matcher.getRoutes().map((routeMatcher) => routeMatcher.record);
+    return matcher.getRoutes().map(routeMatcher => routeMatcher.record);
   }
   function hasRoute(name) {
     return !!matcher.getRecordMatcher(name);
@@ -1416,7 +1401,9 @@ function createRouter(options) {
     currentLocation = assign({}, currentLocation || currentRoute.value);
     if (typeof rawLocation === "string") {
       const locationNormalized = parseURL(parseQuery$1, rawLocation, currentLocation.path);
-      const matchedRoute2 = matcher.resolve({ path: locationNormalized.path }, currentLocation);
+      const matchedRoute2 = matcher.resolve({
+        path: locationNormalized.path
+      }, currentLocation);
       const href2 = routerHistory.createHref(locationNormalized.fullPath);
       return assign(locationNormalized, matchedRoute2, {
         params: decodeParams(matchedRoute2.params),
@@ -1455,14 +1442,13 @@ function createRouter(options) {
       // keep the hash encoded so fullPath is effectively path + encodedQuery +
       // hash
       hash,
-      query: (
-        // if the user is using a custom query lib like qs, we might have
-        // nested objects, so we keep the query as is, meaning it can contain
-        // numbers at `$route.query`, but at the point, the user will have to
-        // use their own type anyway.
-        // https://github.com/vuejs/router/issues/328#issuecomment-649481567
-        stringifyQuery$1 === stringifyQuery ? normalizeQuery(rawLocation.query) : rawLocation.query || {}
-      )
+      query:
+      // if the user is using a custom query lib like qs, we might have
+      // nested objects, so we keep the query as is, meaning it can contain
+      // numbers at `$route.query`, but at the point, the user will have to
+      // use their own type anyway.
+      // https://github.com/vuejs/router/issues/328#issuecomment-649481567
+      stringifyQuery$1 === stringifyQuery ? normalizeQuery(rawLocation.query) : rawLocation.query || {}
     }, matchedRoute, {
       redirectedFrom: void 0,
       href
@@ -1483,18 +1469,23 @@ function createRouter(options) {
     return pushWithRedirect(to);
   }
   function replace(to) {
-    return push(assign(locationAsObject(to), { replace: true }));
+    return push(assign(locationAsObject(to), {
+      replace: true
+    }));
   }
   function handleRedirectRecord(to) {
     const lastMatched = to.matched[to.matched.length - 1];
     if (lastMatched && lastMatched.redirect) {
-      const { redirect } = lastMatched;
+      const {
+        redirect
+      } = lastMatched;
       let newTargetLocation = typeof redirect === "function" ? redirect(to) : redirect;
       if (typeof newTargetLocation === "string") {
-        newTargetLocation = newTargetLocation.includes("?") || newTargetLocation.includes("#") ? newTargetLocation = locationAsObject(newTargetLocation) : (
-          // force empty params
-          { path: newTargetLocation }
-        );
+        newTargetLocation = newTargetLocation.includes("?") || newTargetLocation.includes("#") ? newTargetLocation = locationAsObject(newTargetLocation) :
+        // force empty params
+        {
+          path: newTargetLocation
+        };
         newTargetLocation.params = {};
       }
       return assign({
@@ -1512,61 +1503,49 @@ function createRouter(options) {
     const force = to.force;
     const replace2 = to.replace === true;
     const shouldRedirect = handleRedirectRecord(targetLocation);
-    if (shouldRedirect)
-      return pushWithRedirect(
-        assign(locationAsObject(shouldRedirect), {
-          state: typeof shouldRedirect === "object" ? assign({}, data, shouldRedirect.state) : data,
-          force,
-          replace: replace2
-        }),
-        // keep original redirectedFrom if it exists
-        redirectedFrom || targetLocation
-      );
+    if (shouldRedirect) return pushWithRedirect(assign(locationAsObject(shouldRedirect), {
+      state: typeof shouldRedirect === "object" ? assign({}, data, shouldRedirect.state) : data,
+      force,
+      replace: replace2
+    }),
+    // keep original redirectedFrom if it exists
+    redirectedFrom || targetLocation);
     const toLocation = targetLocation;
     toLocation.redirectedFrom = redirectedFrom;
     let failure;
     if (!force && isSameRouteLocation(stringifyQuery$1, from, targetLocation)) {
-      failure = createRouterError(16, { to: toLocation, from });
-      handleScroll(
-        from,
-        from,
-        // this is a push, the only way for it to be triggered from a
-        // history.listen is with a redirect, which makes it become a push
-        true,
-        // This cannot be the first navigation because the initial location
-        // cannot be manually navigated to
-        false
-      );
+      failure = createRouterError(16, {
+        to: toLocation,
+        from
+      });
+      handleScroll(from, from,
+      // this is a push, the only way for it to be triggered from a
+      // history.listen is with a redirect, which makes it become a push
+      true,
+      // This cannot be the first navigation because the initial location
+      // cannot be manually navigated to
+      false);
     }
-    return (failure ? Promise.resolve(failure) : navigate(toLocation, from)).catch((error) => isNavigationFailure(error) ? (
-      // navigation redirects still mark the router as ready
-      isNavigationFailure(
-        error,
-        2
-        /* ErrorTypes.NAVIGATION_GUARD_REDIRECT */
-      ) ? error : markAsReady(error)
-    ) : (
-      // reject any unknown error
-      triggerError(error, toLocation, from)
-    )).then((failure2) => {
+    return (failure ? proxyWin.proxy.Promise.resolve(failure) : navigate(toLocation, from)).catch(error => isNavigationFailure(error) ?
+    // navigation redirects still mark the router as ready
+    isNavigationFailure(error, 2
+    /* ErrorTypes.NAVIGATION_GUARD_REDIRECT */) ? error : markAsReady(error) :
+    // reject any unknown error
+    triggerError(error, toLocation, from)).then(failure2 => {
       if (failure2) {
-        if (isNavigationFailure(
-          failure2,
-          2
-          /* ErrorTypes.NAVIGATION_GUARD_REDIRECT */
-        )) {
+        if (isNavigationFailure(failure2, 2
+        /* ErrorTypes.NAVIGATION_GUARD_REDIRECT */)) {
           return pushWithRedirect(
-            // keep options
-            assign({
-              // preserve an existing replacement but allow the redirect to override it
-              replace: replace2
-            }, locationAsObject(failure2.to), {
-              state: typeof failure2.to === "object" ? assign({}, data, failure2.to.state) : data,
-              force
-            }),
-            // preserve the original redirectedFrom if any
-            redirectedFrom || toLocation
-          );
+          // keep options
+          assign({
+            // preserve an existing replacement but allow the redirect to override it
+            replace: replace2
+          }, locationAsObject(failure2.to), {
+            state: typeof failure2.to === "object" ? assign({}, data, failure2.to.state) : data,
+            force
+          }),
+          // preserve the original redirectedFrom if any
+          redirectedFrom || toLocation);
         }
       } else {
         failure2 = finalizeNavigation(toLocation, from, true, replace2, data);
@@ -1577,7 +1556,7 @@ function createRouter(options) {
   }
   function checkCanceledNavigationAndReject(to, from) {
     const error = checkCanceledNavigation(to, from);
-    return error ? Promise.reject(error) : Promise.resolve();
+    return error ? proxyWin.proxy.Promise.reject(error) : proxyWin.proxy.Promise.resolve();
   }
   function runWithContext(fn) {
     const app = installedApps.values().next().value;
@@ -1588,7 +1567,7 @@ function createRouter(options) {
     const [leavingRecords, updatingRecords, enteringRecords] = extractChangingRecords(to, from);
     guards = extractComponentsGuards(leavingRecords.reverse(), "beforeRouteLeave", to, from);
     for (const record of leavingRecords) {
-      record.leaveGuards.forEach((guard) => {
+      record.leaveGuards.forEach(guard => {
         guards.push(guardToPromiseFn(guard, to, from));
       });
     }
@@ -1604,7 +1583,7 @@ function createRouter(options) {
     }).then(() => {
       guards = extractComponentsGuards(updatingRecords, "beforeRouteUpdate", to, from);
       for (const record of updatingRecords) {
-        record.updateGuards.forEach((guard) => {
+        record.updateGuards.forEach(guard => {
           guards.push(guardToPromiseFn(guard, to, from));
         });
       }
@@ -1615,8 +1594,7 @@ function createRouter(options) {
       for (const record of enteringRecords) {
         if (record.beforeEnter) {
           if (isArray(record.beforeEnter)) {
-            for (const beforeEnter of record.beforeEnter)
-              guards.push(guardToPromiseFn(beforeEnter, to, from));
+            for (const beforeEnter of record.beforeEnter) guards.push(guardToPromiseFn(beforeEnter, to, from));
           } else {
             guards.push(guardToPromiseFn(record.beforeEnter, to, from));
           }
@@ -1625,7 +1603,7 @@ function createRouter(options) {
       guards.push(canceledNavigationCheck);
       return runGuardQueue(guards);
     }).then(() => {
-      to.matched.forEach((record) => record.enterCallbacks = {});
+      to.matched.forEach(record => record.enterCallbacks = {});
       guards = extractComponentsGuards(enteringRecords, "beforeRouteEnter", to, from, runWithContext);
       guards.push(canceledNavigationCheck);
       return runGuardQueue(guards);
@@ -1636,28 +1614,21 @@ function createRouter(options) {
       }
       guards.push(canceledNavigationCheck);
       return runGuardQueue(guards);
-    }).catch((err) => isNavigationFailure(
-      err,
-      8
-      /* ErrorTypes.NAVIGATION_CANCELLED */
-    ) ? err : Promise.reject(err));
+    }).catch(err => isNavigationFailure(err, 8
+    /* ErrorTypes.NAVIGATION_CANCELLED */) ? err : proxyWin.proxy.Promise.reject(err));
   }
   function triggerAfterEach(to, from, failure) {
-    afterGuards.list().forEach((guard) => runWithContext(() => guard(to, from, failure)));
+    afterGuards.list().forEach(guard => runWithContext(() => guard(to, from, failure)));
   }
   function finalizeNavigation(toLocation, from, isPush, replace2, data) {
     const error = checkCanceledNavigation(toLocation, from);
-    if (error)
-      return error;
+    if (error) return error;
     const isFirstNavigation = from === START_LOCATION_NORMALIZED;
-    const state = !isBrowser ? {} : history.state;
+    const state = !isBrowser ? {} : proxyWin.proxy.history.state;
     if (isPush) {
-      if (replace2 || isFirstNavigation)
-        routerHistory.replace(toLocation.fullPath, assign({
-          scroll: isFirstNavigation && state && state.scroll
-        }, data));
-      else
-        routerHistory.push(toLocation.fullPath, data);
+      if (replace2 || isFirstNavigation) routerHistory.replace(toLocation.fullPath, assign({
+        scroll: isFirstNavigation && state && state.scroll
+      }, data));else routerHistory.push(toLocation.fullPath, data);
     }
     currentRoute.value = toLocation;
     handleScroll(toLocation, from, isPush, isFirstNavigation);
@@ -1665,15 +1636,16 @@ function createRouter(options) {
   }
   let removeHistoryListener;
   function setupListeners() {
-    if (removeHistoryListener)
-      return;
+    if (removeHistoryListener) return;
     removeHistoryListener = routerHistory.listen((to, _from, info) => {
-      if (!router.listening)
-        return;
+      if (!router.listening) return;
       const toLocation = resolve(to);
       const shouldRedirect = handleRedirectRecord(toLocation);
       if (shouldRedirect) {
-        pushWithRedirect(assign(shouldRedirect, { replace: true, force: true }), toLocation).catch(noop);
+        pushWithRedirect(assign(shouldRedirect, {
+          replace: true,
+          force: true
+        }), toLocation).catch(noop);
         return;
       }
       pendingLocation = toLocation;
@@ -1681,61 +1653,42 @@ function createRouter(options) {
       if (isBrowser) {
         saveScrollPosition(getScrollKey(from.fullPath, info.delta), computeScrollPosition());
       }
-      navigate(toLocation, from).catch((error) => {
-        if (isNavigationFailure(
-          error,
-          4 | 8
-          /* ErrorTypes.NAVIGATION_CANCELLED */
-        )) {
+      navigate(toLocation, from).catch(error => {
+        if (isNavigationFailure(error, 4 | 8
+        /* ErrorTypes.NAVIGATION_CANCELLED */)) {
           return error;
         }
-        if (isNavigationFailure(
-          error,
-          2
-          /* ErrorTypes.NAVIGATION_GUARD_REDIRECT */
-        )) {
-          pushWithRedirect(
-            assign(locationAsObject(error.to), {
-              force: true
-            }),
-            toLocation
-            // avoid an uncaught rejection, let push call triggerError
-          ).then((failure) => {
-            if (isNavigationFailure(
-              failure,
-              4 | 16
-              /* ErrorTypes.NAVIGATION_DUPLICATED */
-            ) && !info.delta && info.type === NavigationType.pop) {
+        if (isNavigationFailure(error, 2
+        /* ErrorTypes.NAVIGATION_GUARD_REDIRECT */)) {
+          pushWithRedirect(assign(locationAsObject(error.to), {
+            force: true
+          }), toLocation
+          // avoid an uncaught rejection, let push call triggerError
+          ).then(failure => {
+            if (isNavigationFailure(failure, 4 | 16
+            /* ErrorTypes.NAVIGATION_DUPLICATED */) && !info.delta && info.type === NavigationType.pop) {
               routerHistory.go(-1, false);
             }
           }).catch(noop);
-          return Promise.reject();
+          return proxyWin.proxy.Promise.reject();
         }
         if (info.delta) {
           routerHistory.go(-info.delta, false);
         }
         return triggerError(error, toLocation, from);
-      }).then((failure) => {
+      }).then(failure => {
         failure = failure || finalizeNavigation(
-          // after navigation, all matched components are resolved
-          toLocation,
-          from,
-          false
-        );
+        // after navigation, all matched components are resolved
+        toLocation, from, false);
         if (failure) {
-          if (info.delta && // a new navigation has been triggered, so we do not want to revert, that will change the current history
+          if (info.delta &&
+          // a new navigation has been triggered, so we do not want to revert, that will change the current history
           // entry while a different route is displayed
-          !isNavigationFailure(
-            failure,
-            8
-            /* ErrorTypes.NAVIGATION_CANCELLED */
-          )) {
+          !isNavigationFailure(failure, 8
+          /* ErrorTypes.NAVIGATION_CANCELLED */)) {
             routerHistory.go(-info.delta, false);
-          } else if (info.type === NavigationType.pop && isNavigationFailure(
-            failure,
-            4 | 16
-            /* ErrorTypes.NAVIGATION_DUPLICATED */
-          )) {
+          } else if (info.type === NavigationType.pop && isNavigationFailure(failure, 4 | 16
+          /* ErrorTypes.NAVIGATION_DUPLICATED */)) {
             routerHistory.go(-1, false);
           }
         }
@@ -1750,16 +1703,15 @@ function createRouter(options) {
     markAsReady(error);
     const list = errorListeners.list();
     if (list.length) {
-      list.forEach((handler) => handler(error, to, from));
+      list.forEach(handler => handler(error, to, from));
     } else {
-      console.error(error);
+      proxyWin.proxy.console.error(error);
     }
-    return Promise.reject(error);
+    return proxyWin.proxy.Promise.reject(error);
   }
   function isReady() {
-    if (ready && currentRoute.value !== START_LOCATION_NORMALIZED)
-      return Promise.resolve();
-    return new Promise((resolve2, reject) => {
+    if (ready && currentRoute.value !== START_LOCATION_NORMALIZED) return proxyWin.proxy.Promise.resolve();
+    return new proxyWin.proxy.Promise((resolve2, reject) => {
       readyHandlers.add([resolve2, reject]);
     });
   }
@@ -1773,15 +1725,16 @@ function createRouter(options) {
     return err;
   }
   function handleScroll(to, from, isPush, isFirstNavigation) {
-    const { scrollBehavior } = options;
-    if (!isBrowser || !scrollBehavior)
-      return Promise.resolve();
-    const scrollPosition = !isPush && getSavedScrollPosition(getScrollKey(to.fullPath, 0)) || (isFirstNavigation || !isPush) && history.state && history.state.scroll || null;
-    return vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.nextTick().then(() => scrollBehavior(to, from, scrollPosition)).then((position) => position && scrollToPosition(position)).catch((err) => triggerError(err, to, from));
+    const {
+      scrollBehavior
+    } = options;
+    if (!isBrowser || !scrollBehavior) return proxyWin.proxy.Promise.resolve();
+    const scrollPosition = !isPush && getSavedScrollPosition(getScrollKey(to.fullPath, 0)) || (isFirstNavigation || !isPush) && proxyWin.proxy.history.state && proxyWin.proxy.history.state.scroll || null;
+    return vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.nextTick().then(() => scrollBehavior(to, from, scrollPosition)).then(position => position && scrollToPosition(position)).catch(err => triggerError(err, to, from));
   }
-  const go = (delta) => routerHistory.go(delta);
+  const go = delta => routerHistory.go(delta);
   let started;
-  const installedApps = /* @__PURE__ */ new Set();
+  const installedApps = /* @__PURE__ */new proxyWin.proxy.Set();
   const router = {
     currentRoute,
     listening: true,
@@ -1807,20 +1760,21 @@ function createRouter(options) {
       app.component("RouterLink", RouterLink);
       app.component("RouterView", RouterView);
       app.config.globalProperties.$router = router2;
-      Object.defineProperty(app.config.globalProperties, "$route", {
+      proxyWin.proxy.Object.defineProperty(app.config.globalProperties, "$route", {
         enumerable: true,
         get: () => vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.unref(currentRoute)
       });
-      if (isBrowser && // used for the initial navigation client side to avoid pushing
+      if (isBrowser &&
+      // used for the initial navigation client side to avoid pushing
       // multiple times when the router is used in multiple apps
       !started && currentRoute.value === START_LOCATION_NORMALIZED) {
         started = true;
-        push(routerHistory.location).catch((err) => {
+        push(routerHistory.location).catch(err => {
         });
       }
       const reactiveRoute = {};
       for (const key in START_LOCATION_NORMALIZED) {
-        Object.defineProperty(reactiveRoute, key, {
+        proxyWin.proxy.Object.defineProperty(reactiveRoute, key, {
           get: () => currentRoute.value[key],
           enumerable: true
         });
@@ -1830,7 +1784,7 @@ function createRouter(options) {
       app.provide(routerViewLocationKey, currentRoute);
       const unmountApp = app.unmount;
       installedApps.add(app);
-      app.unmount = function() {
+      app.unmount = function () {
         installedApps.delete(app);
         if (installedApps.size < 1) {
           pendingLocation = START_LOCATION_NORMALIZED;
@@ -1845,7 +1799,7 @@ function createRouter(options) {
     }
   };
   function runGuardQueue(guards) {
-    return guards.reduce((promise, guard) => promise.then(() => runWithContext(guard)), Promise.resolve());
+    return guards.reduce((promise, guard) => promise.then(() => runWithContext(guard)), proxyWin.proxy.Promise.resolve());
   }
   return router;
 }
@@ -1853,18 +1807,15 @@ function extractChangingRecords(to, from) {
   const leavingRecords = [];
   const updatingRecords = [];
   const enteringRecords = [];
-  const len = Math.max(from.matched.length, to.matched.length);
+  const len = proxyWin.proxy.Math.max(from.matched.length, to.matched.length);
   for (let i = 0; i < len; i++) {
     const recordFrom = from.matched[i];
     if (recordFrom) {
-      if (to.matched.find((record) => isSameRouteRecord(record, recordFrom)))
-        updatingRecords.push(recordFrom);
-      else
-        leavingRecords.push(recordFrom);
+      if (to.matched.find(record => isSameRouteRecord(record, recordFrom))) updatingRecords.push(recordFrom);else leavingRecords.push(recordFrom);
     }
     const recordTo = to.matched[i];
     if (recordTo) {
-      if (!from.matched.find((record) => isSameRouteRecord(record, recordTo))) {
+      if (!from.matched.find(record => isSameRouteRecord(record, recordTo))) {
         enteringRecords.push(recordTo);
       }
     }
@@ -1880,81 +1831,60 @@ const _export_sfc = (sfc, props) => {
   return target;
 };
 
-const _hoisted_1 = { class: "home" };
-
-
-const _sfc_main = {
-  __name: 'HomeView',
-  setup(__props) {
-
-// 无需逻辑，仅展示静态内容
-
-return (_ctx, _cache) => {
-  const _component_router_link = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.resolveComponent("router-link");
-
-  return (vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.openBlock(), vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createElementBlock("div", _hoisted_1, [
-    _cache[1] || (_cache[1] = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createElementVNode("a", {
-      href: "https://github.com/zhanghongen/vite-mfe-federation",
-      target: "_blank",
-      "aria-label": "GitHub"
-    }, [
-      vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createElementVNode("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        width: "24",
-        height: "24",
-        viewBox: "0 0 24 24",
-        fill: "currentColor"
-      }, [
-        vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createElementVNode("path", { d: "M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.26.793-.577v-2.022c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.204.084 1.837 1.236 1.837 1.236 1.07 1.833 2.807 1.304 3.492.997.108-.775.419-1.305.762-1.605-2.665-.305-5.467-1.332-5.467-5.93 0-1.31.468-2.381 1.235-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.403 1.02.004 2.047.137 3.006.403 2.29-1.552 3.295-1.23 3.295-1.23.653 1.653.242 2.874.118 3.176.77.84 1.232 1.911 1.232 3.221 0 4.609-2.807 5.624-5.48 5.921.43.371.823 1.103.823 2.222v3.293c0 .32.192.694.8.576C20.565 21.796 24 17.298 24 12c0-6.627-5.373-12-12-12z" })
-      ])
-    ], -1)),
-    _cache[2] || (_cache[2] = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createElementVNode("h1", null, "Vue Home", -1)),
-    _cache[3] || (_cache[3] = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createElementVNode("p", null, "This is the main landing page of your Vue 3 app.", -1)),
-    vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createVNode(_component_router_link, { to: "/vite-mfe-federation/vite-vue-app/about" }, {
-      default: vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.withCtx(() => _cache[0] || (_cache[0] = [
-        vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createTextVNode("Go to About")
-      ])),
-      _: 1,
-      __: [0]
-    })
-  ]))
-}
-}
-
+const _sfc_main = {};
+const _hoisted_1 = {
+  class: "home"
 };
-const HomeView = /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',"data-v-6b0dd29b"]]);
+function _sfc_render(_ctx, _cache) {
+  const _component_router_link = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.resolveComponent("router-link");
+  return vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.openBlock(), vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createElementBlock("div", _hoisted_1, [_cache[1] || (_cache[1] = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createElementVNode("a", {
+    href: "https://github.com/zhanghongen/vite-mfe-federation",
+    target: "_blank",
+    "aria-label": "GitHub"
+  }, [vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createElementVNode("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "24",
+    height: "24",
+    viewBox: "0 0 24 24",
+    fill: "currentColor"
+  }, [vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createElementVNode("path", {
+    d: "M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.26.793-.577v-2.022c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.204.084 1.837 1.236 1.837 1.236 1.07 1.833 2.807 1.304 3.492.997.108-.775.419-1.305.762-1.605-2.665-.305-5.467-1.332-5.467-5.93 0-1.31.468-2.381 1.235-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.403 1.02.004 2.047.137 3.006.403 2.29-1.552 3.295-1.23 3.295-1.23.653 1.653.242 2.874.118 3.176.77.84 1.232 1.911 1.232 3.221 0 4.609-2.807 5.624-5.48 5.921.43.371.823 1.103.823 2.222v3.293c0 .32.192.694.8.576C20.565 21.796 24 17.298 24 12c0-6.627-5.373-12-12-12z"
+  })]), vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createTextVNode(" go github ")], -1)), _cache[2] || (_cache[2] = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createElementVNode("hr", null, null, -1)), _cache[3] || (_cache[3] = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createElementVNode("h1", null, "Vue Home", -1)), _cache[4] || (_cache[4] = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createElementVNode("p", null, "This is the main landing page of your Vue 3 app.", -1)), vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createVNode(_component_router_link, {
+    to: "/vite-mfe-federation/vite-vue-app/about"
+  }, {
+    default: vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.withCtx(() => _cache[0] || (_cache[0] = [vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createTextVNode("Go to About")])),
+    _: 1,
+    __: [0]
+  })]);
+}
+const HomeView = /*#__PURE__*/_export_sfc(_sfc_main, [['render', _sfc_render], ['__scopeId', "data-v-4b4d6bb4"]]);
 
 const router = createRouter({
   history: createWebHistory(),
-  routes: [
-    {
-      path: '/vite-mfe-federation/vite-vue-app/home',
-      name: 'home',
-      component: HomeView,
-    },
-    {
-      path: '/vite-mfe-federation/vite-vue-app/about',
-      name: 'about',
-      component: () => __vitePreload(() => import('./AboutView-2hfykDen.js'),true              ?__vite__mapDeps([0,1,2]):void 0),
-    },
-  ],
+  routes: [{
+    path: '/vite-mfe-federation/vite-vue-app/home',
+    name: 'home',
+    component: HomeView
+  }, {
+    path: '/vite-mfe-federation/vite-vue-app/about',
+    name: 'about',
+    component: () => __vitePreload(() => import('./AboutView-B7SwoAmK.js'),true              ?__vite__mapDeps([0,1,2,3]):void 0)
+  }]
 });
-
 let app;
 let container;
 async function mount(props) {
-  container = document.createElement('div');
-  document.getElementById("mfe-apps").appendChild(container);
+  container = proxyWin.proxy.document.createElement('div');
+  container.classList.add(props.name);
+  proxyWin.proxy.document.getElementById("mfe-apps").appendChild(container);
   app = vite_mf_2_vue_mf_2_app__loadShare__vue__loadShare__.createApp(RouterView);
   app.use(router);
   app.mount(container);
 }
-
 async function unmount() {
   app.unmount();
   container.remove();
 }
-
 async function bootstrap() {}
 
 const main = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

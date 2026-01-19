@@ -11,11 +11,11 @@
 
 A lightweight micro-frontend solution built with mainstream 2026 technologies, delivering high loading performance and complete MF capabilities.
 
-### Related Domains
-- Micro-frontend: module-federation (mainstream MF modular tech in 2026 with active ecosystem)
-- Micro-router: single-spa (enterprise-grade MF routing management)
-- Sandbox: [vite-plugin-sandbox](https://github.com/zhangHongEn/vite-plugin-sandbox) (isolation)
-- Server: Edge Route (micro-frontend route management, roadmap)
+### Related Technologies
+- **Micro-frontend: module-federation** (mainstream MF modular tech in 2026 with active ecosystem)
+- **Micro-router: single-spa** (enterprise-grade MF routing management)
+- **Sandbox: [vite-plugin-sandbox](https://github.com/zhangHongEn/vite-plugin-sandbox)** (isolation)
+- **Server: Edge Route** (micro-frontend route management, roadmap)
 
 ### Features
 - High performance: manifest preloading and optimized ESM waterfall to speed up MF loading
@@ -62,11 +62,11 @@ A lightweight micro-frontend solution built with mainstream 2026 technologies, d
 
 一个使用 2026 年主流技术的轻量化微前端解决方案，拥有极高的加载性能和完整的微前端特性。
 
-### 相关领域
-- 微前端：module-federation（2026 年最主流的微前端模块化技术，生态活跃）
-- micro-router：single-spa（大型微前端路由管理方案）
-- sandbox：[vite-plugin-sandbox](https://github.com/zhangHongEn/vite-plugin-sandbox)（沙箱隔离）
-- server：Edge Route（微前端路由管理方案，roadmap）
+### 相关技术领域
+- **微前端: module-federation**（2026 年最主流的微前端模块化技术，生态活跃）
+- **micro-router: single-spa**（大型微前端路由管理方案）
+- **sandbox: [vite-plugin-sandbox](https://github.com/zhangHongEn/vite-plugin-sandbox)**（沙箱隔离）
+- **server: Edge Route**（微前端路由管理方案，roadmap）
 
 ### 特性
 - 性能高：manifest 预加载、优化 ESM 加载瀑布，显著提升微前端加载速度

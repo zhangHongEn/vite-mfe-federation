@@ -25,6 +25,7 @@ let app
 let container
 export async function mount(props) {
   container = document.createElement('div')
+  container.classList.add(props.name)
   document.getElementById("mfe-apps").appendChild(container)
   app = createApp(RouterView)
   app.use(router)

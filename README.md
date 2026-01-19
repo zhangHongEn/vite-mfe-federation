@@ -2,9 +2,6 @@
 
 [中文](#zh) | [English](#en)
 
-
-[English](#en)
-
 <a id="en"></a>
 
 ## English
@@ -12,8 +9,8 @@
 A lightweight micro-frontend solution built with mainstream 2026 technologies, delivering high loading performance and complete MF capabilities.
 
 ### Related Technologies
-- **Micro-frontend: module-federation** (mainstream MF modular tech in 2026 with active ecosystem)
-- **Micro-router: single-spa** (enterprise-grade MF routing management)
+- **Micro-frontend: [module-federation](https://module-federation.io)** (mainstream MF modular tech in 2026 with active ecosystem)
+- **Micro-router: [single-spa](https://github.com/single-spa/single-spa)** (enterprise-grade MF routing management)
 - **Sandbox: [vite-plugin-sandbox](https://github.com/zhangHongEn/vite-plugin-sandbox)** (isolation)
 - **Server: Edge Route** (micro-frontend route management, roadmap)
 
@@ -63,8 +60,8 @@ A lightweight micro-frontend solution built with mainstream 2026 technologies, d
 一个使用 2026 年主流技术的轻量化微前端解决方案，拥有极高的加载性能和完整的微前端特性。
 
 ### 相关技术领域
-- **微前端: module-federation**（2026 年最主流的微前端模块化技术，生态活跃）
-- **micro-router: single-spa**（大型微前端路由管理方案）
+- **微前端: [module-federation](https://module-federation.io)**（2026 年最主流的微前端模块化技术，生态活跃）
+- **micro-router: [single-spa](https://github.com/single-spa/single-spa)**（大型微前端路由管理方案）
 - **sandbox: [vite-plugin-sandbox](https://github.com/zhangHongEn/vite-plugin-sandbox)**（沙箱隔离）
 - **server: Edge Route**（微前端路由管理方案，roadmap）
 
